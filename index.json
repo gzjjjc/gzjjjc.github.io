@@ -1,0 +1,18 @@
+{
+    "css": {
+        "src": ["css/**/*.css", "css/**/*.scss"],
+        "dist": "dist/css"
+    },
+    "js": {
+        "srcBase": "js/",
+        "src": ["js/**/*.js", "js/*.js"],
+        "dist": "dist/js"
+    },
+    "image": {
+        "srcBase": "image/",
+        "src": [
+            "image/*"
+        ],
+        "dist": "dist/image"
+    }
+}
