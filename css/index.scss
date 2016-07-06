@@ -5,17 +5,8 @@ body{
 }
 
 #doc-header {
-	background-color: $color-primary;
-    border-color: $color-primary-dark;
+    border-color: $navbar-border-bottom;
     border-width: 0 0 1px;
-
-    .menu {
-		background-color: $color-primary;
-
-		.item {
-			color: $color-primary-inverted !important;
-		}
-    }
 
     .brand {
     	padding: 14px 12px 9px;
