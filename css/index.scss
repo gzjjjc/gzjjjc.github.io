@@ -1,17 +1,53 @@
 @import "variables";
+@import "function";
+@import "bs/variables";
+@import "bs/mixins/breakpoints";
 
 body{
 	background-color: $background-color;
 }
 
 #doc-header {
+	padding: 0 .5rem;
     border-color: $navbar-border-bottom;
     border-width: 0 0 1px;
 
-    .brand {
-    	padding: 14px 12px 9px;
+    .container {
+        padding: 0px;
+    }
+
+    .navbar-brand {
+    	padding: pxTorem(8px) 0 pxTorem(8px);
+        margin-top: .5rem;
     	img {
     		width: 85px;
+    		height: 23px;
     	}
     }
+
+    .navbar-nav {
+        .nav-item {
+            margin: 0;
+            .nav-link {
+                min-width: pxTorem(90px);
+                text-align:center;
+                padding: 1rem .25rem;
+                &:hover {
+                    background: #2d2d2d;
+                }
+            }
+        }
+    }
+
+    .form-inline {
+        margin-top: .5rem;
+    }
+}
+
+@include media-breakpoint-down(xs, $grid-breakpoints) { 
+	.navbar-brand {
+    	position: absolute;
+	    left: 50%;
+	    margin-left: -43px;
+	}
 }

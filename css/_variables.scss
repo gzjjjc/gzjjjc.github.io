@@ -9,7 +9,12 @@ $color-primary: #3097d1 !default;
 $color-primary-dark: #1c73a5 !default;
 $color-primary-inverted: $color-white-light !default;
 
-$background-color: $color-gray-light !default;
+
+$browser-default-font-size: 16px !default;
+
+$background-color: $color-white-light !default;
+
+
 
 // navbar
 $navbar-border-bottom: $color-gray-deep !default;

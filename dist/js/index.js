@@ -1,1 +1,1 @@
-$(function(){$("#doc-header .dropdown").dropdown({on:"hover"})});
+$(function(){void 0!==$("img.lazyload-image").lazyload&&$("img.lazyload-image").lazyload({effect:"fadeIn"})});

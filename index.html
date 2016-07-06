@@ -11,50 +11,49 @@
     <meta name="author" content="AmosZhong <983064150@qq.com>">
     <title>广州坚记建材</title>
     <!--Core CSS -->
-    <link href="http://cdn.bootcss.com/semantic-ui/2.2.1/semantic.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./dist/css/index.css">
     <link rel="apple-touch-icon" href="image/apple-touch-icon.png">
     <link rel="shortcut icon" href="image/favicon.ico">
 </head>
 
 <body>
-    <div id="doc-header" class="ui fixed menu">
-        <div class="ui container">
-            <a class="brand" href="/">
-                <img src="./dist/image/brand-white.png" alt="brand">
+    <div id="doc-header" class="navbar navbar-fixed-top navbar-dark bg-inverse">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img class="lazyload-image" data-original="./dist/image/brand-white.png"></a>
             </a>
-            <a class="item">首页</a>
-            <a class="ui dropdown item">
-            产品
-            <i class="dropdown icon"></i>
-            <div class="menu">
-              <div class="item">
-                <i class="dropdown icon"></i>
-                <span class="text">环保彩砖</span>
-                <div class="menu">
-                  <div class="item">生态透水砖</div>
-                  <div class="item">环保彩砖</div>
-                  <div class="item">分层砖</div>
-                </div>
-              </div>
-            </div>
-          </a>
-            <a class="item">项目案例</a>
-            <a class="item">关于我们</a>
-            <div class="right menu">
-                <div class="item">
-                    <div class="ui icon input">
-                        <input type="text" placeholder="Search...">
-                        <i class="search link icon"></i>
-                    </div>
-                </div>
-            </div>
+          <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#doc-header-menu">
+            &#9776;
+          </button>
+          <div class="collapse navbar-toggleable-xs" id="doc-header-menu">
+            <ul class="nav navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">首页</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product">产品展示</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/customer">项目案例</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">联系我们</a>
+              </li>
+            </ul>
+          </div>
+          <form class="form-inline pull-xs-right hidden-sm-down">
+            <input class="form-control" type="text" placeholder="Search">
+          </form>
         </div>
     </div>
-    <div></div>
+    <div id="doc-carousel"></div>
+    <div id="doc-body" class="container"></div>
+    <div id="doc-footer"></div>
 </body>
-<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="http://cdn.bootcss.com/semantic-ui/2.2.1/semantic.min.js"></script>
-<script src="./dist/js/index.js?rev=f50297182af46f28ac7eaae4416f20fb"></script>
-
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/tether/1.3.2/js/tether.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script src="./dist/js/index.js?rev=f50297182af46f28ac7eaae4416f20fb"></script>
 </html>
