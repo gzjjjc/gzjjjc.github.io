@@ -1,21 +1,10 @@
-
-$color-gray-light: #c1c1c1;
-$color-gray-deep: #727272;
-$color-white-light: #ebebeb;
-$color-white-deep: #ffffff;
-$color-black-light: #333333;
-$color-black-deep: #000000;
-$color-primary: #3097d1 !default;
-$color-primary-dark: #1c73a5 !default;
-$color-primary-inverted: $color-white-light !default;
-
+@import "color";
 
 $browser-default-font-size: 16px !default;
-
-$background-color: $color-white-light !default;
-
+$background-color: #f5f8fa !default;
 
 
 // navbar
+$navbar-transparent: $color-transparent-totally !default;
 $navbar-background: $color-primary !default;
 $navbar-border-bottom: $color-primary-dark !default;
