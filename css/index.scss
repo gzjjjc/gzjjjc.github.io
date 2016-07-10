@@ -3,6 +3,7 @@
 @import "bs/variables";
 @import "bs/mixins/breakpoints";
 body {
+    font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
     position: relative;
     background-color: $background-color;
 }
@@ -82,7 +83,7 @@ body {
 #doc-carousel {
     .inner-item {
         width: 100%;
-        height: pxTorem(640px);
+        height: pxTorem(644px);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
