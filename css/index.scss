@@ -23,13 +23,12 @@ body {
     }
     .navbar-nav {
         .nav-item {
-            margin: 0;
             .nav-link {
                 min-width: pxTorem(120px);
                 padding: 1rem .25rem;
                 text-align: center;
-                &:hover {
-                    background: #2d2d2d;
+                &.active,&:hover {
+                    background: rgba(0,0,0,.1);
                 }
             }
         }
@@ -47,21 +46,34 @@ body {
     &.navbar-transparent {
         background-color: transparent;
         border-width: 0;
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    padding: .5rem .25rem;
+                    margin-top: .5rem; 
+                    &.active,&:hover {
+                        background: rgba(0,0,0,.3);
+                    }
+                }
+            }
+        }
     }
 }
 
-@include media-breakpoint-down(xs, $grid-breakpoints) {
-    .navbar-brand {
-        position: absolute;
-        left: 50%;
-        margin-left: -43px;
-    }
-    .navbar-nav {
-        .nav-item {
-            float: none;
-            .nav-link {
-                padding: .5rem .25rem;
-                text-align: left;
+@include media-breakpoint-down(sm, $grid-breakpoints) {
+    #doc-header {
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            margin-left: -43px;
+        }
+        .navbar-nav {
+            .nav-item {
+                float: none;
+                margin: 0;
+                .nav-link {
+                    padding: .5rem .25rem;
+                }
             }
         }
     }
