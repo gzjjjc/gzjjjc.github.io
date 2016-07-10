@@ -56,7 +56,7 @@ function loadJScript() {
     }
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src = "https://api.map.baidu.com/api?v=2.0&ak=kDn0ouEREmENRD9oTrmV4W27AjadqnWl&callback=init";
+    script.src = "https://api.map.baidu.com/api?v=2.0&ak=kDn0ouEREmENRD9oTrmV4W27AjadqnWl&s=1&callback=init";
     document.body.appendChild(script);
     window.mapScriptIsAdded = true;
 }
