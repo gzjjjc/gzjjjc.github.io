@@ -110,6 +110,10 @@ gulp.task('images', function() {
     var srcBase = publicRelative + publicHome.image.srcBase;
     var dist = publicRelative + publicHome.image.dist;
 
+    console.log(src);
+    console.log(dist);
+    console.log(srcBase);
+
     return gulp.src(src, {
             base: srcBase
         })

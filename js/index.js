@@ -1,7 +1,7 @@
 $(function() {
     // 图片懒加载
-    if ($('img.lazyload-image').lazyload !== undefined) {
-        $('img.lazyload-image').lazyload({
+    if ($('img.lazyload').lazyload !== undefined) {
+        $('img.lazyload').lazyload({
             effect: 'fadeIn'
         });
     }
@@ -40,4 +40,33 @@ $(function() {
     $('#doc-header-menu .nav-link').on('click', function() {
         $('#doc-header-menu').collapse('hide');
     });
+
+
+    $(window).on('activate.bs.scrollspy', function(e, target) {
+        if (target.relatedTarget === '#doc-about' || target.relatedTarget === '#doc-product') {
+            loadJScript();
+        }
+    });
+    window.mapScriptIsAdded = false;
 });
+
+function loadJScript() {
+    if (window.mapScriptIsAdded) {
+        return;
+    }
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "http://api.map.baidu.com/api?v=2.0&ak=kDn0ouEREmENRD9oTrmV4W27AjadqnWl&callback=init";
+    document.body.appendChild(script);
+    window.mapScriptIsAdded = true;
+}
+
+function init() {
+    var map = new BMap.Map("doc-about-map", { minZoom: 12, maxZoom: 19 }); // 创建Map实例
+    var point = new BMap.Point(113.398315, 23.136928); // 创建点坐标
+    map.setCurrentCity("广州"); // 设置地图显示的城市 此项是必须设置的
+    map.centerAndZoom(point, 17);
+    map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
+    map.addControl(new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL })); //添加放大缩小控件
+    map.enableScrollWheelZoom(); //启用滚轮放大缩小
+}

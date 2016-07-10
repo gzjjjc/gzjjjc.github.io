@@ -3,7 +3,7 @@
 @import "bs/variables";
 @import "bs/mixins/breakpoints";
 body {
-    font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
     position: relative;
     background-color: $background-color;
 }
@@ -28,8 +28,9 @@ body {
                 min-width: pxTorem(120px);
                 padding: 1rem .25rem;
                 text-align: center;
-                &.active,&:hover {
-                    background: rgba(0,0,0,.1);
+                &.active,
+                &:hover {
+                    background: rgba(0, 0, 0, .1);
                 }
             }
         }
@@ -51,9 +52,10 @@ body {
             .nav-item {
                 .nav-link {
                     padding: .5rem .25rem;
-                    margin-top: .5rem; 
-                    &.active,&:hover {
-                        background: rgba(0,0,0,.3);
+                    margin-top: .5rem;
+                    &.active,
+                    &:hover {
+                        background: rgba(0, 0, 0, .3);
                     }
                 }
             }
@@ -98,6 +100,82 @@ body {
     }
 }
 
-#doc-body {
-    height: 1000px;
+.section {
+    padding: pxTorem(80px) 0 pxTorem(30px);
+    position: relative;
+    background-color: #FFFFFF;
+    .title {
+        text-align: center;
+        max-width: 760px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.section-gray {
+    background-color: #f7f7f9;
+}
+
+@include media-breakpoint-down(sm, $grid-breakpoints) {
+    .section {
+        .title {
+            max-width: 90%;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.separator-container {
+    text-align: center;
+    position: relative;
+    .separator {
+        color: $color-primary;
+        margin: 0 auto 1em;
+        width: 11em;
+        &.line-separator:before,
+        &.line-separator:after {
+            display: block;
+            width: 40%;
+            content: " ";
+            margin-top: 14px;
+            border: 1px solid $color-primary;
+        }
+        &.line-separator:before {
+            float: left;
+        }
+        &.line-separator:after {
+            float: right;
+        }
+    }
+}
+
+.project {
+    padding: 8px 0px 16px;
+    .project-image {
+        width: 100%;
+        position: relative;
+        height: auto;
+        min-height: 213px;
+    }
+    .project-detail {
+        text-align: center;
+    }
+    .project-detail-more {
+        border-radius: 30px;
+    }
+    .project-detail-type {
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    .project-detail-title {
+        margin: 5px 0 20px;
+    }
+    &.card {
+        padding-top: 0;
+    }
+}
+
+#doc-about-map {
+    width: 100%;
+    height: 450px;
 }

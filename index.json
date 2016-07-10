@@ -11,7 +11,8 @@
     "image": {
         "srcBase": "image/",
         "src": [
-            "image/*"
+            "image/*",
+            "image/product/*"
         ],
         "dist": "dist/image"
     }
