@@ -37,12 +37,27 @@ body {
     }
     .navbar-toggler {
         margin: .5rem 0;
-        color: $color-white-light;
-        &[aria-expanded="true"] {
-            color: #ffffff;
-        }
+        width: 40px;
+        height: 40px;
+        padding: 0;
         &:focus {
             outline: none;
+        }
+        .icon-bar {
+            display: block;
+            position: relative;
+            background-color: $color-white-light;
+            width: 24px;
+            height: 2px;
+            border-radius: 1px;
+            &+.icon-bar {
+                margin-top: 4px;
+            }
+        }
+        &[aria-expanded="true"] {
+            .icon-bar {
+                background-color: #ffffff;
+            }
         }
     }
     &.navbar-transparent {
@@ -181,7 +196,7 @@ body {
 }
 
 #doc-footer {
-    padding: pxTorem(10px) 0  pxTorem(30px);
+    padding: pxTorem(10px) 0 pxTorem(30px);
     background-color: #1e1e1e;
     color: #DDDDDD;
     .text-sm {
