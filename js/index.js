@@ -75,15 +75,15 @@ function init() {
     // 将标注添加到地图中
     //创建信息窗口
     var opts = {
-        width: 200,
+        width: 160,
         // 信息窗口宽度
-        height: 60,
+        height: 32,
         // 信息窗口高度
-        title: name,
+        title: '广州市坚记建材有限公司',
         // 信息窗口标题
         enableAutoPan: true //自动平移
     };
-    var infoWindow = new BMap.InfoWindow('广州市坚记建材有限公司<br/>联系电话：13503032579', opts);
+    var infoWindow = new BMap.InfoWindow('联系电话：13503032349', opts);
     maker.addEventListener('click', function () {
         map.openInfoWindow(infoWindow, point);
     });
