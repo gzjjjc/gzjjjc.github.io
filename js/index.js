@@ -66,7 +66,28 @@ function init() {
     var point = new BMap.Point(113.398315, 23.136928); // 创建点坐标
     map.setCurrentCity("广州"); // 设置地图显示的城市 此项是必须设置的
     map.centerAndZoom(point, 17);
-    map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
     map.addControl(new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL })); //添加放大缩小控件
+    var opts = { offset: new BMap.Size(48, 16) }
+    map.addControl(new BMap.MapTypeControl(opts)); //添加地图类型控件
     map.enableScrollWheelZoom(); //启用滚轮放大缩小
+    var maker = new BMap.Marker(point);
+    map.addOverlay(maker);
+    // 将标注添加到地图中
+    //创建信息窗口
+    var opts = {
+        width: 200,
+        // 信息窗口宽度
+        height: 60,
+        // 信息窗口高度
+        title: name,
+        // 信息窗口标题
+        enableAutoPan: true //自动平移
+    };
+    var infoWindow = new BMap.InfoWindow('广州市坚记建材有限公司<br/>联系电话：13503032579', opts);
+    maker.addEventListener('click', function () {
+        map.openInfoWindow(infoWindow, point);
+    });
+    var evt = document.createEvent('MouseEvents');
+    evt.initEvent('click', true, true);
+    maker.dispatchEvent(evt);
 }
