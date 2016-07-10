@@ -209,7 +209,10 @@ body {
         font-size: .9rem;
     }
     .vertical-margin-lg {
-        margin-top: pxTorem(20px);
+        margin-top: pxTorem(10px);
         margin-bottom: pxTorem(20px);
+    }
+    .col-md-4 {
+        margin-top: pxTorem(10px);
     }
 }
