@@ -69,7 +69,7 @@ function init() {
     map.addControl(new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL })); //添加放大缩小控件
     var opts = { offset: new BMap.Size(48, 16) }
     map.addControl(new BMap.MapTypeControl(opts)); //添加地图类型控件
-    map.enableScrollWheelZoom(); //启用滚轮放大缩小
+    // map.enableScrollWheelZoom(); //启用滚轮放大缩小
     var maker = new BMap.Marker(point);
     map.addOverlay(maker);
     // 将标注添加到地图中
