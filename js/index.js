@@ -8,6 +8,7 @@ $(function() {
 
     $("#doc-carousel .inner-item").lazyload({
         skip_invisible: true,
+        effect: 'fadeIn'
     });
 
     $('#doc-carousel').on('slid.bs.carousel', function() {
