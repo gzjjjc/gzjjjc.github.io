@@ -70,6 +70,7 @@ function init() {
     var opts = { offset: new BMap.Size(48, 16) }
     map.addControl(new BMap.MapTypeControl(opts)); //添加地图类型控件
     // map.enableScrollWheelZoom(); //启用滚轮放大缩小
+    map.disableDragging();
     var maker = new BMap.Marker(point);
     map.addOverlay(maker);
     // 将标注添加到地图中
