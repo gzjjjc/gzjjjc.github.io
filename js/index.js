@@ -4,6 +4,9 @@ $(function() {
         $('img.lazyload').lazyload({
             effect: 'fadeIn'
         });
+        $('.lazyload-background').lazyload({
+            effect: 'fadeIn'
+        });
     }
 
     $("#doc-carousel .inner-item").lazyload({

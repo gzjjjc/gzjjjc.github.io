@@ -9,11 +9,11 @@
         "dist": "dist/js"
     },
     "image": {
-        "srcBase": "image/",
+        "srcBase": "image",
         "src": [
             "image/*",
-            "image/product/*"
+            "image/**/*"
         ],
-        "dist": "dist/image"
+        "dist": "dist/image/"
     }
 }

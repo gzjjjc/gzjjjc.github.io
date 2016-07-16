@@ -15,12 +15,33 @@ body {
     border-color: $navbar-border-bottom;
     border-width: 0 0 1px;
     .navbar-brand {
-        padding: pxTorem(8px) 0 pxTorem(8px);
-        margin-top: .5rem;
+        // padding: pxTorem(8px) 0 pxTorem(8px);
+        // margin-top: .5rem;
+        width: 108px;
+        padding: 0px;
+        margin-right: .5rem;
+        margin-top: pxTorem(6px);
         img {
-            width: 85px;
-            height: 23px;
+            width: 32px;
         }
+        .media-left {
+            margin-right: 0px;
+            padding-right: 0px;
+        }
+        .media-heading {
+            margin-bottom: 0px;
+        }
+        .media-content {
+            line-height: 1.2;
+            font-size: 1rem;
+        }
+    }
+    .navbar-slogan {
+        font-size: pxTorem(20px);
+        font-weight: 500;
+        font-family: "STXinwei", "STXingkai", "FZShuTi", "KaiTi", "STKaiti", "LiSu", "STLiti";
+        padding-top: pxTorem(12px);
+        color: #fff;
     }
     .navbar-nav {
         .nav-item {
@@ -172,6 +193,13 @@ body {
 
 .project {
     padding: 8px 0px 16px;
+    .project-image-trigger {
+        display: block;
+        min-height: 213px;
+        background-color: #f6f6f6;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
     .project-image {
         width: 100%;
         position: relative;
@@ -189,10 +217,24 @@ body {
         margin-top: 20px;
     }
     .project-detail-title {
-        margin: 5px 0 20px;
+        margin: 8px 0 16px;
+    }
+    .project-detail-info {
+        max-height: 80px;
+        min-height: 80px;
     }
     &.card {
         padding-top: 0;
+    }
+}
+
+#doc-customer {
+    .project {
+        padding: 0;
+        .project-image-trigger {
+            min-height: 120px;
+            background-color: #ffffff;
+        }
     }
 }
 

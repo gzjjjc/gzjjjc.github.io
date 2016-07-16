@@ -117,11 +117,7 @@ gulp.task('images', function() {
     return gulp.src(src, {
             base: srcBase
         })
-        .pipe($.imagemin({
-            optimizationLevel: 3,
-            progressive: true,
-            interlaced: true,
-        }))
+        .pipe($.imagemin())
         .pipe(gulp.dest(dist))
         .pipe($.size({
             title: 'images'
