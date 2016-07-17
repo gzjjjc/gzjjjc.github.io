@@ -1,0 +1,1 @@
+$(function(){void 0!==$("img.lazyload").lazyload&&($("img.lazyload").lazyload({effect:"fadeIn"}),$(".lazyload-background").lazyload({effect:"fadeIn"})),$("#doc-menu").on("shown.bs.tab",'a[data-toggle="tab"]',function(a){console.log(a.target);var o=$($(a.target).attr("href"));console.log(o)})});
