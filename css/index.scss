@@ -309,16 +309,22 @@ body {
 .icon-wx:before {
     content: "\e600";
     color: #3EB135 !important;
+    background: #ffffff;
+    border-radius: 50%;
 }
 
 .icon-qq:before {
     content: "\e601";
     color: #4DAFEA !important;
+    background: #ffffff;
+    border-radius: 50%;
 }
 
 .icon-email:before {
     content: "\e602";
     color: #1C9979 !important;
+    background: #ffffff;
+    border-radius: 50%;
 }
 
 .icon-phone:before {
@@ -339,10 +345,31 @@ body {
     z-index: 250;
     background: #3c3c3c;
     .contactHelper {
-        padding: 4px 8px;
+        padding: 4px 10px;
         display: block;
+        .contact-detail {
+            display: none;
+            color: #ffffff;
+        }
+        .iconfont {
+            font-size: 24px;
+        }
         &:hover {
             text-decoration: none;
+            background: #2d2b2b;
+        }
+        &:hover.iconfont-toggle {
+            padding: 1px 2px 0px;
+            .iconfont {
+                display: none;
+            }
+            .contact-detail {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                font-size: 14px;
+            }
         }
     }
 }

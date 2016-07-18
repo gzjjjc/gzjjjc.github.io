@@ -29,6 +29,12 @@ $(function() {
         } else {
             $('#doc-header').addClass(navbarTransClass);
         }
+
+        if (len > 500) {
+            $('#goToTop').removeClass('hidden-xs-up');
+        } else {
+            $('#goToTop').addClass('hidden-xs-up');
+        }
     });
 
     $('#doc-header-menu').on('show.bs.collapse', function() {
@@ -46,9 +52,10 @@ $(function() {
 
 
     $(window).on('activate.bs.scrollspy', function(e, target) {
-        if (target.relatedTarget === '#doc-about' || target.relatedTarget === '#doc-product') {
+        if (target.relatedTarget === '#doc-about' || target.relatedTarget === '#doc-project') {
             loadJScript();
         }
+
     });
     window.mapScriptIsAdded = false;
 });
@@ -88,7 +95,7 @@ function init() {
         enableAutoPan: true //自动平移
     };
     var infoWindow = new BMap.InfoWindow('联系电话：13503032349', opts);
-    maker.addEventListener('click', function () {
+    maker.addEventListener('click', function() {
         map.openInfoWindow(infoWindow, point);
     });
     var evt = document.createEvent('MouseEvents');
