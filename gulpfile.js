@@ -125,12 +125,12 @@ gulp.task('images', function() {
 
 });
 
-gulp.task('public', function(done) {
+gulp.task('all', function(done) {
     runSequence(['styles', 'scripts', 'images']);
     done();
 });
 
-gulp.task('publicWatch', function (cb) {
+gulp.task('watch', function (cb) {
     var scriptsPath = publicHome.js.src;
     for (var i = 0; i < scriptsPath.length; i++) {
         scriptsPath[i] = publicRelative + scriptsPath[i];
@@ -143,7 +143,7 @@ gulp.task('publicWatch', function (cb) {
     scriptsPath = scriptsPath.concat(stylesPath);
 
     $.watch(scriptsPath, function () {
-        gulp.start('public');
+        gulp.start('all');
     });
 });
 

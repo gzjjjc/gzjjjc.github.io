@@ -29,12 +29,6 @@ $(function() {
         } else {
             $('#doc-header').addClass(navbarTransClass);
         }
-
-        if (len > 500) {
-            $('#goToTop').removeClass('hidden-xs-up');
-        } else {
-            $('#goToTop').addClass('hidden-xs-up');
-        }
     });
 
     $('#doc-header-menu').on('show.bs.collapse', function() {
@@ -58,6 +52,7 @@ $(function() {
 
     });
     window.mapScriptIsAdded = false;
+    $('[data-toggle="tooltip"]').tooltip();
 });
 
 function loadJScript() {
