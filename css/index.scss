@@ -271,7 +271,7 @@ body {
 }
 
 #doc-footer {
-    padding: pxTorem(10px) 0 pxTorem(30px);
+    padding: pxTorem(10px) 0 pxTorem(60px);
     background-color: #1e1e1e;
     color: #DDDDDD;
     .text-sm {
@@ -370,6 +370,27 @@ body {
                 text-align: center;
                 font-size: 14px;
             }
+        }
+    }
+}
+
+#fixedDownHelper {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 250;
+    background: #3c3c3c;
+    .contactHelper {
+        padding: 4px 10px;
+        display: block;
+        float: left;
+        color: #ffffff;
+        width: 33.33%;
+        text-align:center;
+        &:hover {
+            text-decoration: none;
+            background: #2d2b2b;
         }
     }
 }
