@@ -1,0 +1,29 @@
+@import "variables";
+@import "function";
+@import "bs/variables";
+@import "bs/mixins/breakpoints";
+.article {
+	.carousel-title {
+		color: #727272;
+	}
+    .carousel {
+        .inner-item {
+            width: 100%;
+            height: pxTorem(360px);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .carousel-indicators {
+        li {
+            border-color: $color-primary;
+        }
+        .active {
+            background-color: $color-primary;
+        }
+    }
+    .carousel-table {
+
+    }
+}

@@ -20,4 +20,15 @@ $(function() {
         id = parseInt(id) - 1;
         $('#doc-menu-detail li:eq(' + id + ') a').tab('show');
     }
+
+
+    $(".carousel .inner-item").lazyload({
+        skip_invisible: true,
+        effect: 'fadeIn'
+    });
+
+    $('.carousel').on('slid.bs.carousel', function() {
+        $("html,body").trigger("scroll");
+    });
+
 });
