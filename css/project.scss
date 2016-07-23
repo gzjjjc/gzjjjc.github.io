@@ -1,0 +1,21 @@
+@import "variables";
+@import "function";
+@import "bs/variables";
+@import "bs/mixins/breakpoints";
+@import "header";
+@import "menu";
+
+@include media-breakpoint-up(lg, $grid-breakpoints) {
+    .col-lg-push-1 {
+        left: 13%;
+    }
+}
+
+
+#doc-body {
+    padding: 32px 0 16px;
+    min-height: 600px;
+}
+
+@import "footer";
+@import "contact";

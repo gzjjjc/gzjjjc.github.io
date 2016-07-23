@@ -2,150 +2,13 @@
 @import "function";
 @import "bs/variables";
 @import "bs/mixins/breakpoints";
-body {
-    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
-    position: relative;
-    background-color: #ffffff;
-}
 
-#doc-header {
-    background-color: $navbar-background;
-    transition: background-color 1s ease;
-    padding: 0 .5rem;
-    border-color: $navbar-border-bottom;
-    border-width: 0 0 1px;
-    .navbar-brand {
-        // padding: pxTorem(8px) 0 pxTorem(8px);
-        // margin-top: .5rem;
-        width: 108px;
-        padding: 0px;
-        margin-right: .5rem;
-        margin-top: pxTorem(6px);
-        img {
-            width: 32px;
-        }
-        .media-left {
-            margin-right: 0px;
-            padding-right: 0px;
-        }
-        .media-heading {
-            margin-bottom: 0px;
-        }
-        .media-content {
-            line-height: 1.2;
-            font-size: 1rem;
-        }
-    }
-    .navbar-slogan {
-        font-size: pxTorem(20px);
-        font-weight: 500;
-        font-family: "STXinwei", "STXingkai", "FZShuTi", "KaiTi", "STKaiti", "LiSu", "STLiti";
-        padding-top: pxTorem(12px);
-        color: #fff;
-    }
-    .navbar-nav {
-        .nav-item {
-            .nav-link {
-                min-width: pxTorem(120px);
-                padding: 1rem .25rem;
-                text-align: center;
-                &.active,
-                &:hover {
-                    background: rgba(0, 0, 0, .1);
-                }
-            }
-        }
-    }
-    .navbar-toggler {
-        margin: .5rem 0;
-        width: 40px;
-        height: 40px;
-        padding: 0;
-        &:focus {
-            outline: none;
-        }
-        .icon-bar {
-            display: block;
-            position: relative;
-            background-color: $color-white-light;
-            width: 24px;
-            height: 2px;
-            border-radius: 1px;
-            &+.icon-bar {
-                margin-top: 4px;
-            }
-        }
-        &[aria-expanded="true"] {
-            .icon-bar {
-                background-color: #ffffff;
-            }
-        }
-    }
-    &.navbar-transparent {
-        background-color: transparent;
-        border-width: 0;
-        .navbar-nav {
-            .nav-item {
-                .nav-link {
-                    padding: .5rem .25rem;
-                    margin-top: .5rem;
-                    &.active,
-                    &:hover {
-                        background: rgba(0, 0, 0, .3);
-                    }
-                }
-            }
-        }
-    }
-}
-
-@include media-breakpoint-down(sm, $grid-breakpoints) {
-    #doc-header {
-        .navbar-brand {
-            position: absolute;
-            left: 50%;
-            margin-left: -43px;
-        }
-        .navbar-nav {
-            .nav-item {
-                float: none;
-                margin: 0;
-                .nav-link {
-                    padding: .5rem .25rem;
-                }
-            }
-        }
-    }
-}
-
-#doc-menu {
-    #doc-menu-detail {
-        padding: 32px 0 16px;
-        border-bottom: 1px solid #ddd;
-    }
-    .nav-item {
-        .nav-link {
-            min-width: pxTorem(130px);
-            padding: .5rem .25rem;
-            text-align: center;
-            color: #727272;
-            border-radius: .4rem;
-            border: 1px solid transparent;
-            margin-bottom: 8px;
-            &.active {
-                color: #ffffff;
-                background: $color-primary;
-            }
-            &:hover {
-                border: 1px solid $color-primary;
-            }
-        }
-    }
-}
+@import "header";
+@import "menu";
 
 #doc-body {
     padding: 32px 0 16px;
-    min-height: 400px;
+    min-height: 600px;
     .product-container {
         padding: 0px 4px;
     }
@@ -180,18 +43,6 @@ body {
     }
 }
 
-#doc-footer {
-    padding: pxTorem(10px) 0 pxTorem(30px);
-    background-color: #1e1e1e;
-    color: #DDDDDD;
-    .text-sm {
-        font-size: .9rem;
-    }
-    .vertical-margin-lg {
-        margin-top: pxTorem(10px);
-        margin-bottom: pxTorem(20px);
-    }
-    .col-md-4 {
-        margin-top: pxTorem(10px);
-    }
-}
+@import "footer";
+@import "contact";
+

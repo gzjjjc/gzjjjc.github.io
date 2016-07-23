@@ -1,0 +1,30 @@
+@import "variables";
+@import "function";
+@import "bs/variables";
+@import "bs/mixins/breakpoints";
+#doc-menu {
+    #doc-menu-detail {
+        padding: 32px 0 16px;
+        border-bottom: 1px solid #ddd;
+    }
+    .nav-item {
+        margin-left: 0;
+        .nav-link {
+            min-width: pxTorem(130px);
+            padding: .5rem .25rem;
+            text-align: center;
+            color: #727272;
+            border-radius: 2rem;
+            border: 1px solid $color-primary;
+            margin-bottom: 8px;
+            &:hover {
+                background: $color-primary-light;
+                color: #ffffff;
+            }
+            &.active {
+                color: #ffffff;
+                background: $color-primary;
+            }
+        }
+    }
+}

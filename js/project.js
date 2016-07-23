@@ -9,7 +9,8 @@ $(function() {
         });
     }
     $('[data-toggle="tooltip"]').tooltip();
-    
+
+
     // 计算选中的tab
     if (window.location.search !== '') {
         var id = window.location.search.split('=')[1];

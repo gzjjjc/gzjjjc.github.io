@@ -1,0 +1,24 @@
+#doc-footer {
+    padding: pxTorem(10px) 0 pxTorem(60px);
+    background-color: #1e1e1e;
+    color: #DDDDDD;
+    .text-sm {
+        font-size: .9rem;
+    }
+    .vertical-margin-lg {
+        margin-top: pxTorem(10px);
+        margin-bottom: pxTorem(20px);
+    }
+    .col-md-4 {
+        margin-top: pxTorem(10px);
+    }
+    .feedbackForm {
+        padding-top: .1rem;
+        label {
+            margin-bottom:.25rem;
+        }
+        .form-group {
+            margin-bottom: .5rem;
+        }
+    }
+}

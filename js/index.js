@@ -8,6 +8,7 @@ $(function() {
             effect: 'fadeIn'
         });
     }
+    $('[data-toggle="tooltip"]').tooltip();
 
     $("#doc-carousel .inner-item").lazyload({
         skip_invisible: true,
@@ -52,7 +53,14 @@ $(function() {
 
     });
     window.mapScriptIsAdded = false;
-    $('[data-toggle="tooltip"]').tooltip();
+
+    $('#projectLink').on('click', function(){
+        window.location = "/project.html";
+    });
+
+    $('#productLink').on('click', function(){
+        window.location = "/product.html";
+    });
 });
 
 function loadJScript() {

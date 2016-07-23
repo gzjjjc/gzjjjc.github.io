@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1468769978_547724.eot');
+    /* IE9*/
+    src: url('//at.alicdn.com/t/font_1468769978_547724.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1468769978_547724.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1468769978_547724.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1468769978_547724.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wx:before {
+    content: "\e600";
+    color: #3EB135 !important;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.icon-qq:before {
+    content: "\e601";
+    color: #4DAFEA !important;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.icon-email:before {
+    content: "\e602";
+    color: #1C9979 !important;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+.icon-phone:before {
+    content: "\e603";
+    color: #ffffff !important;
+}
+
+.icon-toTop:before {
+    content: "\e604";
+    color: #ffffff !important;
+}
+
+#fixedHelper {
+    position: fixed;
+    bottom: 50%;
+    margin-bottom: -95px;
+    right: .1%;
+    z-index: 250;
+    background: #3c3c3c;
+    .contactHelper {
+        padding: 4px 10px;
+        display: block;
+        .contact-detail {
+            display: none;
+            color: #ffffff;
+        }
+        .iconfont {
+            font-size: 24px;
+        }
+        &:hover {
+            text-decoration: none;
+            background: #2d2b2b;
+        }
+        &:hover.iconfont-toggle {
+            padding: 1px 2px 0px;
+            .iconfont {
+                display: none;
+            }
+            .contact-detail {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+#fixedDownHelper {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 250;
+    background: #3c3c3c;
+    .contactHelper {
+        padding: 4px 10px;
+        display: block;
+        float: left;
+        color: #ffffff;
+        width: 33.33%;
+        text-align:center;
+        &:hover {
+            text-decoration: none;
+            background: #2d2b2b;
+        }
+    }
+}
