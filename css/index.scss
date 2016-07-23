@@ -284,6 +284,15 @@ body {
     .col-md-4 {
         margin-top: pxTorem(10px);
     }
+    .feedbackForm {
+        padding-top: .1rem;
+        label {
+            margin-bottom:.25rem;
+        }
+        .form-group {
+            margin-bottom: .5rem;
+        }
+    }
 }
 
 @font-face {
