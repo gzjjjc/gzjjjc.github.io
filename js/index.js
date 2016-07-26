@@ -47,7 +47,7 @@ $(function() {
 
 
     $(window).on('activate.bs.scrollspy', function(e, target) {
-        if (target.relatedTarget === '#doc-about' || target.relatedTarget === '#doc-project') {
+        if (target.relatedTarget === '#doc-about') {
             loadJScript();
         }
 
