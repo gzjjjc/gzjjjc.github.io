@@ -336,6 +336,251 @@ $(function() {
     $('#luceshi').html(product_luceshi_HTMLS);
     productHTMLS += product_luceshi_HTMLS;
 
+    // type 6 干粉砂浆
+    var product_ganfenshajiang = [{
+        id: 19,
+        type: 6,
+        name: '瓷砖粘贴剂',
+        background: 'dist/image/product/19/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }, {
+        id: 20,
+        type: 6,
+        name: '填缝剂',
+        background: 'dist/image/product/20/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }, {
+        id: 21,
+        type: 6,
+        name: '911聚氨酯防水涂料',
+        background: 'dist/image/product/21/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }, {
+        id: 22,
+        type: 6,
+        name: 'k11防水涂料',
+        background: 'dist/image/product/22/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }, {
+        id: 23,
+        type: 6,
+        name: '多功能高效防水剂',
+        background: 'dist/image/product/23/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }, {
+        id: 24,
+        type: 6,
+        name: '外墙透明防水剂',
+        background: 'dist/image/product/24/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }];
+    var product_ganfenshajiang_HTMLS = '';
+    $.each(product_ganfenshajiang, function(key, data) {
+        productTemplate.find('.product-title').html(data.name);
+        productTemplate.find('.product-image').attr('data-original', data.background);
+        var details = '';
+        $.each(data.detail, function(key, specData) {
+            details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
+        });
+        productTemplate.find('.product-spec tbody').html(details);
+        product_ganfenshajiang_HTMLS += productTemplate.prop('outerHTML');
+    });
+    $('#ganfenshajiang').html(product_ganfenshajiang_HTMLS);
+    productHTMLS += product_ganfenshajiang_HTMLS;
+
+    // type 7 隔热板
+    var product_geliban = [{
+        id: 25,
+        type: 7,
+        name: '隔热砖',
+        background: 'dist/image/product/25/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }, {
+        id: 26,
+        type: 7,
+        name: 'PRPS复合隔热板',
+        background: 'dist/image/product/26/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }];
+    var product_geliban_HTMLS = '';
+    $.each(product_geliban, function(key, data) {
+        productTemplate.find('.product-title').html(data.name);
+        productTemplate.find('.product-image').attr('data-original', data.background);
+        var details = '';
+        $.each(data.detail, function(key, specData) {
+            details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
+        });
+        productTemplate.find('.product-spec tbody').html(details);
+        product_geliban_HTMLS += productTemplate.prop('outerHTML');
+    });
+    $('#geliban').html(product_geliban_HTMLS);
+    productHTMLS += product_geliban_HTMLS;
+
+    // type 8 花岗岩石材
+    var product_huagangyanshicai = [{
+        id: 27,
+        type: 8,
+        name: '花岗岩石材',
+        background: 'dist/image/product/27/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }];
+    var product_huagangyanshicai_HTMLS = '';
+    $.each(product_huagangyanshicai, function(key, data) {
+        productTemplate.find('.product-title').html(data.name);
+        productTemplate.find('.product-image').attr('data-original', data.background);
+        var details = '';
+        $.each(data.detail, function(key, specData) {
+            details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
+        });
+        productTemplate.find('.product-spec tbody').html(details);
+        product_huagangyanshicai_HTMLS += productTemplate.prop('outerHTML');
+    });
+    $('#huagangyanshicai').html(product_huagangyanshicai_HTMLS);
+    productHTMLS += product_huagangyanshicai_HTMLS;
+
+    // type 9 混凝土排水管
+    var product_hunningtupaishuiguan = [{
+        id: 28,
+        type: 9,
+        name: '混凝土排水管',
+        background: 'dist/image/product/28/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }];
+    var product_hunningtupaishuiguan_HTMLS = '';
+    $.each(product_hunningtupaishuiguan, function(key, data) {
+        productTemplate.find('.product-title').html(data.name);
+        productTemplate.find('.product-image').attr('data-original', data.background);
+        var details = '';
+        $.each(data.detail, function(key, specData) {
+            details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
+        });
+        productTemplate.find('.product-spec tbody').html(details);
+        product_hunningtupaishuiguan_HTMLS += productTemplate.prop('outerHTML');
+    });
+    $('#hunningtupaishuiguan').html(product_hunningtupaishuiguan_HTMLS);
+    productHTMLS += product_hunningtupaishuiguan_HTMLS;
+
+    // type 10 防水材料
+    var product_fangshuicailiao = [{
+        id: 29,
+        type: 10,
+        name: '防水材料',
+        background: 'dist/image/product/29/1.png',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }];
+    var product_fangshuicailiao_HTMLS = '';
+    $.each(product_fangshuicailiao, function(key, data) {
+        productTemplate.find('.product-title').html(data.name);
+        productTemplate.find('.product-image').attr('data-original', data.background);
+        var details = '';
+        $.each(data.detail, function(key, specData) {
+            details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
+        });
+        productTemplate.find('.product-spec tbody').html(details);
+        product_fangshuicailiao_HTMLS += productTemplate.prop('outerHTML');
+    });
+    $('#fangshuicailiao').html(product_fangshuicailiao_HTMLS);
+    productHTMLS += product_fangshuicailiao_HTMLS;
+
     // 全部产品
     $('#all').html(productHTMLS);
     // 图片懒加载
