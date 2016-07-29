@@ -17,6 +17,7 @@ $(function() {
         type: 1,
         name: '生态透水砖',
         background: 'dist/image/product/1/1.png',
+        link: '/product/1.html',
         detail: [{
             spec: '200x100',
             thick: '60'
@@ -32,6 +33,7 @@ $(function() {
         type: 1,
         name: '环保彩砖',
         background: 'dist/image/product/2/1.png',
+        link: '/product/2.html',
         detail: [{
             spec: '230x115',
             thick: '45'
@@ -47,6 +49,7 @@ $(function() {
         type: 1,
         name: '分层砖',
         background: 'dist/image/product/3/1.png',
+        link: '/product/3.html',
         detail: [{
             spec: '200x100',
             thick: '45'
@@ -62,6 +65,7 @@ $(function() {
         type: 1,
         name: '导盲砖',
         background: 'dist/image/product/4/1.png',
+        link: '/product/4.html',
         detail: [{
             spec: '250x250',
             thick: '50'
@@ -74,6 +78,7 @@ $(function() {
         type: 1,
         name: '环保彩砖',
         background: 'dist/image/product/5/1.png',
+        link: '/product/5.html',
         detail: [{
             spec: '150x150',
             thick: '50/60'
@@ -92,6 +97,7 @@ $(function() {
         type: 1,
         name: '环保彩砖',
         background: 'dist/image/product/6/1.png',
+        link: '/product/6.html',
         detail: [{
             spec: '150x150',
             thick: '50/60'
@@ -110,6 +116,7 @@ $(function() {
         type: 1,
         name: '码头砖',
         background: 'dist/image/product/7/1.png',
+        link: '/product/7.html',
         detail: [{
             spec: '225x112.5',
             thick: '80'
@@ -122,6 +129,7 @@ $(function() {
         type: 1,
         name: '西班牙砖',
         background: 'dist/image/product/8/1.png',
+        link: '/product/8.html',
         detail: [{
             spec: '250x250',
             thick: '50'
@@ -137,6 +145,7 @@ $(function() {
         type: 1,
         name: '六角护坡砖',
         background: 'dist/image/product/9/1.png',
+        link: '/product/9.html',
         detail: [{
             spec: '400x400',
             thick: '150'
@@ -146,6 +155,7 @@ $(function() {
         type: 1,
         name: '六角护坡砖',
         background: 'dist/image/product/10/1.png',
+        link: '/product/10.html',
         detail: [{
             spec: '400x400',
             thick: '150'
@@ -155,6 +165,7 @@ $(function() {
         type: 1,
         name: '八字植草砖',
         background: 'dist/image/product/11/1.png',
+        link: '/product/11.html',
         detail: [{
             spec: '400x400',
             thick: '80'
@@ -164,6 +175,7 @@ $(function() {
         type: 1,
         name: '双八字植草砖',
         background: 'dist/image/product/12/1.png',
+        link: '/product/12.html',
         detail: [{
             spec: '400x400',
             thick: '80'
@@ -173,6 +185,7 @@ $(function() {
         type: 1,
         name: '井形植草砖',
         background: 'dist/image/product/13/1.png',
+        link: '/product/13.html',
         detail: [{
             spec: '250x190',
             thick: '75'
@@ -182,6 +195,7 @@ $(function() {
         type: 1,
         name: '背心植草砖',
         background: 'dist/image/product/14/1.png',
+        link: '/product/14.html',
         detail: [{
             spec: '300x300',
             thick: '60'
@@ -206,6 +220,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_caizhuan_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#caizhuan').html(product_caizhuan_HTMLS);
@@ -218,6 +233,7 @@ $(function() {
         type: 2,
         name: '水泥盖板',
         background: 'dist/image/product/15/1.png',
+        link: '/product/15.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -238,6 +254,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_shuinigaiban_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#shuinigaiban').html(product_shuinigaiban_HTMLS);
@@ -249,6 +266,7 @@ $(function() {
         type: 3,
         name: '沙井盖',
         background: 'dist/image/product/16/1.png',
+        link: '/product/16.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -269,6 +287,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_shajinggai_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#shajinggai').html(product_shajinggai_HTMLS);
@@ -280,6 +299,7 @@ $(function() {
         type: 4,
         name: '防撞隔离墩',
         background: 'dist/image/product/17/1.png',
+        link: '/product/17.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -300,6 +320,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_fangzhuanggelidun_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#fangzhuanggelidun').html(product_fangzhuanggelidun_HTMLS);
@@ -311,6 +332,7 @@ $(function() {
         type: 5,
         name: '路侧石',
         background: 'dist/image/product/18/1.png',
+        link: '/product/18.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -331,6 +353,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_luceshi_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#luceshi').html(product_luceshi_HTMLS);
@@ -342,6 +365,7 @@ $(function() {
         type: 6,
         name: '瓷砖粘贴剂',
         background: 'dist/image/product/19/1.png',
+        link: '/product/19.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -357,6 +381,7 @@ $(function() {
         type: 6,
         name: '填缝剂',
         background: 'dist/image/product/20/1.png',
+        link: '/product/20.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -372,6 +397,7 @@ $(function() {
         type: 6,
         name: '911聚氨酯防水涂料',
         background: 'dist/image/product/21/1.png',
+        link: '/product/21.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -387,6 +413,7 @@ $(function() {
         type: 6,
         name: 'k11防水涂料',
         background: 'dist/image/product/22/1.png',
+        link: '/product/22.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -402,6 +429,7 @@ $(function() {
         type: 6,
         name: '多功能高效防水剂',
         background: 'dist/image/product/23/1.png',
+        link: '/product/23.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -417,6 +445,7 @@ $(function() {
         type: 6,
         name: '外墙透明防水剂',
         background: 'dist/image/product/24/1.png',
+        link: '/product/24.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -437,6 +466,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_ganfenshajiang_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#ganfenshajiang').html(product_ganfenshajiang_HTMLS);
@@ -448,6 +478,7 @@ $(function() {
         type: 7,
         name: '隔热砖',
         background: 'dist/image/product/25/1.png',
+        link: '/product/25.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -463,6 +494,7 @@ $(function() {
         type: 7,
         name: 'PRPS复合隔热板',
         background: 'dist/image/product/26/1.png',
+        link: '/product/26.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -483,6 +515,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_geliban_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#geliban').html(product_geliban_HTMLS);
@@ -494,6 +527,7 @@ $(function() {
         type: 8,
         name: '花岗岩石材',
         background: 'dist/image/product/27/1.png',
+        link: '/product/27.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -514,6 +548,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_huagangyanshicai_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#huagangyanshicai').html(product_huagangyanshicai_HTMLS);
@@ -525,6 +560,7 @@ $(function() {
         type: 9,
         name: '混凝土排水管',
         background: 'dist/image/product/28/1.png',
+        link: '/product/28.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -545,6 +581,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_hunningtupaishuiguan_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#hunningtupaishuiguan').html(product_hunningtupaishuiguan_HTMLS);
@@ -556,6 +593,7 @@ $(function() {
         type: 10,
         name: '防水材料',
         background: 'dist/image/product/29/1.png',
+        link: '/product/29.html',
         detail: [{
             spec: '300x200',
             thick: '30'
@@ -576,6 +614,7 @@ $(function() {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
         productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
         product_fangshuicailiao_HTMLS += productTemplate.prop('outerHTML');
     });
     $('#fangshuicailiao').html(product_fangshuicailiao_HTMLS);

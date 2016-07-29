@@ -4,10 +4,23 @@
 @import "bs/mixins/breakpoints";
 @import "header";
 @import "menu";
-
 @include media-breakpoint-up(lg, $grid-breakpoints) {
     .col-lg-push-1 {
         left: 13%;
+    }
+}
+
+#doc-menu {
+    .breadcrumb {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+}
+@include media-breakpoint-down(xs, $grid-breakpoints) {
+    #doc-menu {
+        .breadcrumb {
+			border-radius: 0;
+        }
     }
 }
 
@@ -15,7 +28,7 @@
     padding: 32px 0 16px;
     min-height: 600px;
 }
-@import "article";
 
+@import "article";
 @import "footer";
 @import "contact";

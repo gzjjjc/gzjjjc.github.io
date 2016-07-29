@@ -3,6 +3,9 @@
 @import "bs/variables";
 @import "bs/mixins/breakpoints";
 .article {
+    .article-title {
+        margin-bottom: 16px;
+    }
     .carousel-title {
         color: #727272;
     }
@@ -47,5 +50,13 @@
     p {
         text-indent: 32px;
         line-height: 32px;
+    }
+    .artical-right-image {
+        width: 100%;
+        height: pxTorem(240px);
+        background-color: #f6f6f6;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin-bottom: 8px;
     }
 }

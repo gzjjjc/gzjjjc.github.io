@@ -1,0 +1,1 @@
+$(function(){void 0!==$("img.lazyload").lazyload&&($("img.lazyload").lazyload({effect:"fadeIn"}),$(".lazyload-background").lazyload({effect:"fadeIn"})),$('[data-toggle="tooltip"]').tooltip(),$(".carousel .inner-item").lazyload({skip_invisible:!0,effect:"fadeIn"}),$(".carousel").on("slid.bs.carousel",function(){$("html,body").trigger("scroll")})});
