@@ -3,9 +3,9 @@
 @import "bs/variables";
 @import "bs/mixins/breakpoints";
 .article {
-	.carousel-title {
-		color: #727272;
-	}
+    .carousel-title {
+        color: #727272;
+    }
     .carousel {
         .inner-item {
             width: 100%;
@@ -46,5 +46,6 @@
     }
     p {
         text-indent: 32px;
+        line-height: 32px;
     }
 }
