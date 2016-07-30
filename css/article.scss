@@ -49,7 +49,22 @@
     }
     p {
         text-indent: 32px;
-        line-height: 32px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    ul {
+        li {
+            line-height: 24px;
+            color: #727272;
+            font-weight: bold;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            .article-li-detail {
+                color: #898989;
+                font-size: 14px;
+                font-weight: normal;
+            }
+        }
     }
     .artical-right-image {
         width: 100%;
@@ -58,5 +73,16 @@
         background-position: center center;
         background-repeat: no-repeat;
         margin-bottom: 8px;
+    }
+    .article-specific {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .table-container {
+        padding-left: 32px;
+        margin: 16px 0px;
+    }
+    .table-sm {
+        font-size: .75rem;
     }
 }
