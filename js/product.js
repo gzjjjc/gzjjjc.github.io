@@ -379,8 +379,24 @@ $(function() {
     $('#luceshi').html(product_luceshi_HTMLS);
     productHTMLS += product_luceshi_HTMLS;
 
-    // type 6 干粉砂浆
+    // type 6 防水材料
     var product_ganfenshajiang = [{
+        id: 29,
+        type: 6,
+        name: '防水材料',
+        background: 'dist/image/product/29/1.png',
+        link: '/product/29.html',
+        detail: [{
+            spec: '300x200',
+            thick: '30'
+        }, {
+            spec: '300x200',
+            thick: '50'
+        }, {
+            spec: '300x200',
+            thick: '60'
+        }]
+    }, {
         id: 19,
         type: 6,
         name: '瓷砖粘贴剂',
@@ -623,42 +639,6 @@ $(function() {
     $('#hunningtupaishuiguan').html(product_hunningtupaishuiguan_HTMLS);
     productHTMLS += product_hunningtupaishuiguan_HTMLS;
 
-    // type 10 防水材料
-    var product_fangshuicailiao = [{
-        id: 29,
-        type: 10,
-        name: '防水材料',
-        background: 'dist/image/product/29/1.png',
-        link: '/product/29.html',
-        detail: [{
-            spec: '300x200',
-            thick: '30'
-        }, {
-            spec: '300x200',
-            thick: '50'
-        }, {
-            spec: '300x200',
-            thick: '60'
-        }]
-    }];
-    var product_fangshuicailiao_HTMLS = '';
-    $.each(product_fangshuicailiao, function(key, data) {
-        productTemplate.find('.product-title').html(data.name);
-        productTemplate.find('.product-image').attr('data-original', data.background);
-        var details = '';
-        $.each(data.detail, function(key, specData) {
-            details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
-        });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
-        }
-        productTemplate.find('.product-spec tbody').html(details);
-        productTemplate.find('a').attr('href', data.link);
-        product_fangshuicailiao_HTMLS += productTemplate.prop('outerHTML');
-    });
-    $('#fangshuicailiao').html(product_fangshuicailiao_HTMLS);
-    productHTMLS += product_fangshuicailiao_HTMLS;
 
     // 全部产品
     $('#all').html(productHTMLS);
