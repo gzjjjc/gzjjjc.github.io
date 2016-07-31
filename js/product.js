@@ -288,8 +288,24 @@ $(function() {
     var product_shajinggai = [{
         id: 16,
         type: 3,
-        name: '沙井盖',
+        name: '圆形雨井',
         background: 'dist/image/product/16/1.png',
+        link: '/product/16.html',
+        detail: [{
+            spec: '600',
+            thick: ''
+        }, {
+            spec: '700',
+            thick: ''
+        }, {
+            spec: '800',
+            thick: ''
+        }]
+    }, {
+        id: 34,
+        type: 3,
+        name: '球墨检查井',
+        background: 'dist/image/product/34/1.png',
         link: '/product/16.html',
         detail: [{
             spec: '450x650',
@@ -298,7 +314,71 @@ $(function() {
             spec: '400x600',
             thick: ''
         }, {
-            spec: '700/800',
+            spec: '500x750',
+            thick: ''
+        }]
+    }, {
+        id: 35,
+        type: 3,
+        name: '方形雨井',
+        background: 'dist/image/product/35/1.png',
+        link: '/product/16.html',
+        detail: [{
+            spec: '450x650',
+            thick: ''
+        }, {
+            spec: '400x600',
+            thick: ''
+        }, {
+            spec: '400x750',
+            thick: ''
+        }]
+    }, {
+        id: 36,
+        type: 3,
+        name: '树脂方形井',
+        background: 'dist/image/product/36/1.png',
+        link: '/product/16.html',
+        detail: [{
+            spec: '400x600',
+            thick: ''
+        }, {
+            spec: '400x500',
+            thick: ''
+        }, {
+            spec: '400x400',
+            thick: ''
+        }]
+    }, {
+        id: 37,
+        type: 3,
+        name: '平式入水井',
+        background: 'dist/image/product/37/1.png',
+        link: '/product/16.html',
+        detail: [{
+            spec: '300x500',
+            thick: ''
+        }, {
+            spec: '400x500',
+            thick: ''
+        }, {
+            spec: '400x400',
+            thick: ''
+        }]
+    }, {
+        id: 38,
+        type: 3,
+        name: '井梯',
+        background: 'dist/image/product/38/1.png',
+        link: '/product/16.html',
+        detail: [{
+            spec: '300x500',
+            thick: ''
+        }, {
+            spec: '400x500',
+            thick: ''
+        }, {
+            spec: '400x400',
             thick: ''
         }]
     }];
