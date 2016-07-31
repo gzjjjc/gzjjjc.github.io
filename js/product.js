@@ -720,6 +720,153 @@ $(function() {
     $('#hunningtupaishuiguan').html(product_hunningtupaishuiguan_HTMLS);
     productHTMLS += product_hunningtupaishuiguan_HTMLS;
 
+    // type 10 水泥制品
+    var product_shuinizhipin = [{
+        id: 39,
+        type: 10,
+        name: '树桩砖',
+        background: 'dist/image/product/39/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '1000x1000',
+            thick: ''
+        }, {
+            spec: '1200x1200',
+            thick: ''
+        }]
+    }, {
+        id: 40,
+        type: 10,
+        name: '电力拼版',
+        background: 'dist/image/product/40/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '1000x1000',
+            thick: ''
+        }, {
+            spec: '1200x1200',
+            thick: ''
+        }]
+    }, {
+        id: 41,
+        type: 10,
+        name: '水槽',
+        background: 'dist/image/product/41/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '1000x1000',
+            thick: ''
+        }, {
+            spec: '1200x1200',
+            thick: ''
+        }]
+    }, {
+        id: 42,
+        type: 10,
+        name: '车止石',
+        background: 'dist/image/product/42/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '1000x1000',
+            thick: ''
+        }, {
+            spec: '1200x1200',
+            thick: ''
+        }]
+    }, {
+        id: 43,
+        type: 10,
+        name: '窗花',
+        background: 'dist/image/product/43/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '1000x1000',
+            thick: ''
+        }, {
+            spec: '1200x1200',
+            thick: ''
+        }]
+    }, {
+        id: 44,
+        type: 10,
+        name: '电缆槽',
+        background: 'dist/image/product/44/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '1000x1000',
+            thick: ''
+        }, {
+            spec: '1200x1200',
+            thick: ''
+        }]
+    }, {
+        id: 45,
+        type: 10,
+        name: '仿花岗岩平石',
+        background: 'dist/image/product/45/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '1000x250',
+            thick: '120'
+        }, {
+            spec: '500x250',
+            thick: '120'
+        }]
+    }, {
+        id: 46,
+        type: 10,
+        name: '仿花岗岩压条',
+        background: 'dist/image/product/46/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '1000x160',
+            thick: '120'
+        }]
+    }, {
+        id: 47,
+        type: 10,
+        name: '钢纤维井梯',
+        background: 'dist/image/product/47/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '300x450',
+            thick: '50'
+        }]
+    }, {
+        id: 48,
+        type: 10,
+        name: '树桩',
+        background: 'dist/image/product/48/1.png',
+        link: '/product/39.html',
+        detail: [{
+            spec: '25000x100',
+            thick: '100'
+        }, {
+            spec: '1800x80',
+            thick: '80'
+        }, {
+            spec: '20000x90',
+            thick: '90'
+        }]
+    }];
+    var product_shuinizhipin_HTMLS = '';
+    $.each(product_shuinizhipin, function(key, data) {
+        productTemplate.find('.product-title').html(data.name);
+        productTemplate.find('.product-image').attr('data-original', data.background);
+        var details = '';
+        $.each(data.detail, function(key, specData) {
+            details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
+        });
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
+        }
+        productTemplate.find('.product-spec tbody').html(details);
+        productTemplate.find('a').attr('href', data.link);
+        product_shuinizhipin_HTMLS += productTemplate.prop('outerHTML');
+    });
+    $('#shuinizhipin').html(product_shuinizhipin_HTMLS);
+    productHTMLS += product_shuinizhipin_HTMLS;
 
     // 全部产品
     $('#all').html(productHTMLS);
