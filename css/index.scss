@@ -291,6 +291,17 @@ body {
     }
 }
 
+#doc-project {
+    .project-image-trigger {
+        background-color: #ffffff;
+        padding: 12px;
+        border-radius: .25rem;
+    }
+    .project-detail {
+        margin-bottom: 24px;
+    }
+}
+
 #doc-about {
     padding-bottom: pxTorem(80px);
     .about-us-container {
@@ -316,7 +327,7 @@ body {
             margin-bottom: 0px;
         }
         .tfoot {
-            color: #525252;
+            color: #888888;
             margin-bottom: 0px;
             font-weight: bold;
         }
