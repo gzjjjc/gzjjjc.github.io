@@ -268,14 +268,14 @@ $(function() {
         background: 'dist/image/product/16/1.png',
         link: '/product/16.html',
         detail: [{
-            spec: '300x200',
-            thick: '30'
+            spec: '450x650',
+            thick: ''
         }, {
-            spec: '300x200',
-            thick: '50'
+            spec: '400x600',
+            thick: ''
         }, {
-            spec: '300x200',
-            thick: '60'
+            spec: '700/800',
+            thick: ''
         }]
     }];
     var product_shajinggai_HTMLS = '';
