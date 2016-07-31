@@ -473,7 +473,7 @@ $(function() {
     productHTMLS += product_ganfenshajiang_HTMLS;
 
     // type 7 隔热板
-    var product_geliban = [{
+    var product_gereban = [{
         id: 25,
         type: 7,
         name: '隔热砖',
@@ -506,8 +506,8 @@ $(function() {
             thick: '60'
         }]
     }];
-    var product_geliban_HTMLS = '';
-    $.each(product_geliban, function(key, data) {
+    var product_gereban_HTMLS = '';
+    $.each(product_gereban, function(key, data) {
         productTemplate.find('.product-title').html(data.name);
         productTemplate.find('.product-image').attr('data-original', data.background);
         var details = '';
@@ -516,10 +516,10 @@ $(function() {
         });
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
-        product_geliban_HTMLS += productTemplate.prop('outerHTML');
+        product_gereban_HTMLS += productTemplate.prop('outerHTML');
     });
-    $('#geliban').html(product_geliban_HTMLS);
-    productHTMLS += product_geliban_HTMLS;
+    $('#gereban').html(product_gereban_HTMLS);
+    productHTMLS += product_gereban_HTMLS;
 
     // type 8 花岗岩石材
     var product_huagangyanshicai = [{
