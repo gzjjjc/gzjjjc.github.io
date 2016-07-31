@@ -156,9 +156,11 @@ body {
     .carousel-control {
         .icon-prev {
             font-size: 32px;
+            margin-left: -20px;
         }
         .icon-next {
             font-size: 32px;
+            margin-right: -10px;
         }
     }
     .carousel-indicators {
