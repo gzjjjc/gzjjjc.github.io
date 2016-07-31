@@ -219,6 +219,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_caizhuan_HTMLS += productTemplate.prop('outerHTML');
@@ -253,6 +257,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_shuinigaiban_HTMLS += productTemplate.prop('outerHTML');
@@ -286,6 +294,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_shajinggai_HTMLS += productTemplate.prop('outerHTML');
@@ -319,6 +331,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_fangzhuanggelidun_HTMLS += productTemplate.prop('outerHTML');
@@ -352,6 +368,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_luceshi_HTMLS += productTemplate.prop('outerHTML');
@@ -465,6 +485,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_ganfenshajiang_HTMLS += productTemplate.prop('outerHTML');
@@ -514,6 +538,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_gereban_HTMLS += productTemplate.prop('outerHTML');
@@ -547,6 +575,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_huagangyanshicai_HTMLS += productTemplate.prop('outerHTML');
@@ -580,6 +612,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_hunningtupaishuiguan_HTMLS += productTemplate.prop('outerHTML');
@@ -613,6 +649,10 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
+        var leftTr =  4 - data.detail.length;
+        if(leftTr > 0) {
+            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
         product_fangshuicailiao_HTMLS += productTemplate.prop('outerHTML');
