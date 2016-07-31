@@ -219,9 +219,9 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
         }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
@@ -239,13 +239,29 @@ $(function() {
         background: 'dist/image/product/15/1.png',
         link: '/product/15.html',
         detail: [{
-            spec: '300x200',
-            thick: '30'
-        }, {
-            spec: '300x200',
+            spec: '500x320',
             thick: '50'
         }, {
-            spec: '300x200',
+            spec: '500x400',
+            thick: '60'
+        }, {
+            spec: '500x500',
+            thick: '60'
+        }]
+    }, {
+        id: 30,
+        type: 2,
+        name: '雨水盖板',
+        background: 'dist/image/product/30/1.png',
+        link: '/product/30.html',
+        detail: [{
+            spec: '500x320',
+            thick: '50'
+        }, {
+            spec: '500x400',
+            thick: '60'
+        }, {
+            spec: '500x500',
             thick: '60'
         }]
     }];
@@ -257,9 +273,9 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
         }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
@@ -294,9 +310,9 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
         }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
@@ -313,14 +329,30 @@ $(function() {
         background: 'dist/image/product/17/1.png',
         link: '/product/17.html',
         detail: [{
-            spec: '300x200',
-            thick: '30'
+            spec: '500x600',
+            thick: '200'
         }, {
-            spec: '300x200',
-            thick: '50'
+            spec: '600x600',
+            thick: '200'
         }, {
-            spec: '300x200',
-            thick: '60'
+            spec: '500x600',
+            thick: '300'
+        }]
+    }, {
+        id: 31,
+        type: 4,
+        name: '防撞石',
+        background: 'dist/image/product/31/1.png',
+        link: '/product/31.html',
+        detail: [{
+            spec: '500x600',
+            thick: '200'
+        }, {
+            spec: '600x600',
+            thick: '200'
+        }, {
+            spec: '500x600',
+            thick: '300'
         }]
     }];
     var product_fangzhuanggelidun_HTMLS = '';
@@ -331,9 +363,9 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
         }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
@@ -350,14 +382,46 @@ $(function() {
         background: 'dist/image/product/18/1.png',
         link: '/product/18.html',
         detail: [{
-            spec: '300x200',
-            thick: '30'
+            spec: '1000x300',
+            thick: '120'
         }, {
-            spec: '300x200',
-            thick: '50'
+            spec: '1000x300',
+            thick: '150'
         }, {
-            spec: '300x200',
-            thick: '60'
+            spec: '500x300',
+            thick: '120'
+        }]
+    }, {
+        id: 32,
+        type: 5,
+        name: '路侧石',
+        background: 'dist/image/product/32/1.png',
+        link: '/product/18.html',
+        detail: [{
+            spec: '500x100',
+            thick: '100'
+        }, {
+            spec: '500x120',
+            thick: '120'
+        }, {
+            spec: '500x300',
+            thick: '150'
+        }]
+    }, {
+        id: 33,
+        type: 5,
+        name: '路侧石',
+        background: 'dist/image/product/33/1.png',
+        link: '/product/18.html',
+        detail: [{
+            spec: '500x600',
+            thick: '200'
+        }, {
+            spec: '500x500',
+            thick: '200'
+        }, {
+            spec: '500x300',
+            thick: '120'
         }]
     }];
     var product_luceshi_HTMLS = '';
@@ -368,9 +432,9 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
         }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
@@ -386,112 +450,49 @@ $(function() {
         name: '防水材料',
         background: 'dist/image/product/29/1.png',
         link: '/product/29.html',
-        detail: [{
-            spec: '300x200',
-            thick: '30'
-        }, {
-            spec: '300x200',
-            thick: '50'
-        }, {
-            spec: '300x200',
-            thick: '60'
-        }]
+        detail: [{ spec: '25kg/18kg', thick: '' }]
     }, {
         id: 19,
         type: 6,
         name: '瓷砖粘贴剂',
         background: 'dist/image/product/19/1.png',
         link: '/product/19.html',
-        detail: [{
-            spec: '300x200',
-            thick: '30'
-        }, {
-            spec: '300x200',
-            thick: '50'
-        }, {
-            spec: '300x200',
-            thick: '60'
-        }]
+        detail: [{ spec: '25kg/18kg', thick: '' }]
     }, {
         id: 20,
         type: 6,
         name: '填缝剂',
         background: 'dist/image/product/20/1.png',
         link: '/product/20.html',
-        detail: [{
-            spec: '300x200',
-            thick: '30'
-        }, {
-            spec: '300x200',
-            thick: '50'
-        }, {
-            spec: '300x200',
-            thick: '60'
-        }]
+        detail: [{ spec: '25kg/18kg', thick: '' }]
     }, {
         id: 21,
         type: 6,
         name: '911聚氨酯防水涂料',
         background: 'dist/image/product/21/1.png',
         link: '/product/21.html',
-        detail: [{
-            spec: '300x200',
-            thick: '30'
-        }, {
-            spec: '300x200',
-            thick: '50'
-        }, {
-            spec: '300x200',
-            thick: '60'
-        }]
+        detail: [{ spec: '25kg/18kg', thick: '' }]
     }, {
         id: 22,
         type: 6,
         name: 'k11防水涂料',
         background: 'dist/image/product/22/1.png',
         link: '/product/22.html',
-        detail: [{
-            spec: '300x200',
-            thick: '30'
-        }, {
-            spec: '300x200',
-            thick: '50'
-        }, {
-            spec: '300x200',
-            thick: '60'
-        }]
+        detail: [{ spec: '25kg/18kg', thick: '' }]
     }, {
         id: 23,
         type: 6,
         name: '多功能高效防水剂',
         background: 'dist/image/product/23/1.png',
         link: '/product/23.html',
-        detail: [{
-            spec: '300x200',
-            thick: '30'
-        }, {
-            spec: '300x200',
-            thick: '50'
-        }, {
-            spec: '300x200',
-            thick: '60'
-        }]
+        detail: [{ spec: '25kg/18kg', thick: '' }]
     }, {
         id: 24,
         type: 6,
         name: '外墙透明防水剂',
         background: 'dist/image/product/24/1.png',
         link: '/product/24.html',
-        detail: [{
-            spec: '300x200',
-            thick: '30'
-        }, {
-            spec: '300x200',
-            thick: '50'
-        }, {
-            spec: '300x200',
-            thick: '60'
-        }]
+        detail: [{ spec: '25kg/18kg', thick: '' }]
     }];
     var product_ganfenshajiang_HTMLS = '';
     $.each(product_ganfenshajiang, function(key, data) {
@@ -501,9 +502,9 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
         }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
@@ -554,9 +555,9 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
         }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
@@ -573,14 +574,14 @@ $(function() {
         background: 'dist/image/product/27/1.png',
         link: '/product/27.html',
         detail: [{
-            spec: '300x200',
-            thick: '30'
+            spec: '500x300',
+            thick: '700'
         }, {
-            spec: '300x200',
-            thick: '50'
+            spec: '500x400',
+            thick: '700'
         }, {
-            spec: '300x200',
-            thick: '60'
+            spec: '600x400',
+            thick: '700'
         }]
     }];
     var product_huagangyanshicai_HTMLS = '';
@@ -591,9 +592,9 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
         }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
@@ -628,9 +629,9 @@ $(function() {
         $.each(data.detail, function(key, specData) {
             details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
         });
-        var leftTr =  4 - data.detail.length;
-        if(leftTr > 0) {
-            details += '<tr>' + '<td rowspan="'+leftTr+'" colspan="2">可定制</td></tr>';
+        var leftTr = 4 - data.detail.length;
+        if (leftTr > 0) {
+            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
         }
         productTemplate.find('.product-spec tbody').html(details);
         productTemplate.find('a').attr('href', data.link);
