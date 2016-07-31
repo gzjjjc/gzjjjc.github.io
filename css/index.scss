@@ -281,7 +281,12 @@ body {
         padding: 0;
         .project-image-trigger {
             min-height: 120px;
+            max-height: 120px;
+            background-position: center 0px;
             background-color: #ffffff;
+            &:hover {
+                background-position: center -120px;
+            }
         }
     }
 }
