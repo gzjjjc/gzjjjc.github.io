@@ -54,13 +54,17 @@ $(function() {
     });
     window.mapScriptIsAdded = false;
 
-    $('#projectLink').on('click', function(){
+    $('#projectLink').on('click', function() {
         window.location = "/project.html";
     });
 
-    $('#productLink').on('click', function(){
+    $('#productLink').on('click', function() {
         window.location = "/product.html";
     });
+    var wow = new WOW({
+        boxClass: 'animCss',
+    });
+    wow.init();
 });
 
 function loadJScript() {

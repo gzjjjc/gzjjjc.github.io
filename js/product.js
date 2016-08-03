@@ -739,7 +739,7 @@ $(function() {
         type: 10,
         name: '电力拼版',
         background: 'dist/image/product/40/1.png',
-        link: '/product/39.html',
+        link: '/product/40.html',
         detail: [{
             spec: '1000x1000',
             thick: ''
@@ -752,7 +752,7 @@ $(function() {
         type: 10,
         name: '水槽',
         background: 'dist/image/product/41/1.png',
-        link: '/product/39.html',
+        link: '/product/41.html',
         detail: [{
             spec: '1000x1000',
             thick: ''
@@ -765,7 +765,7 @@ $(function() {
         type: 10,
         name: '车止石',
         background: 'dist/image/product/42/1.png',
-        link: '/product/39.html',
+        link: '/product/42.html',
         detail: [{
             spec: '1000x1000',
             thick: ''
@@ -778,7 +778,7 @@ $(function() {
         type: 10,
         name: '窗花',
         background: 'dist/image/product/43/1.png',
-        link: '/product/39.html',
+        link: '/product/43.html',
         detail: [{
             spec: '1000x1000',
             thick: ''
@@ -791,7 +791,7 @@ $(function() {
         type: 10,
         name: '电缆槽',
         background: 'dist/image/product/44/1.png',
-        link: '/product/39.html',
+        link: '/product/44.html',
         detail: [{
             spec: '1000x1000',
             thick: ''
@@ -804,7 +804,7 @@ $(function() {
         type: 10,
         name: '仿花岗岩平石',
         background: 'dist/image/product/45/1.png',
-        link: '/product/39.html',
+        link: '/product/45.html',
         detail: [{
             spec: '1000x250',
             thick: '120'
@@ -817,7 +817,7 @@ $(function() {
         type: 10,
         name: '仿花岗岩压条',
         background: 'dist/image/product/46/1.png',
-        link: '/product/39.html',
+        link: '/product/46.html',
         detail: [{
             spec: '1000x160',
             thick: '120'
@@ -827,7 +827,7 @@ $(function() {
         type: 10,
         name: '钢纤维井梯',
         background: 'dist/image/product/47/1.png',
-        link: '/product/39.html',
+        link: '/product/47.html',
         detail: [{
             spec: '300x450',
             thick: '50'
@@ -837,7 +837,7 @@ $(function() {
         type: 10,
         name: '树桩',
         background: 'dist/image/product/48/1.png',
-        link: '/product/39.html',
+        link: '/product/48.html',
         detail: [{
             spec: '25000x100',
             thick: '100'
