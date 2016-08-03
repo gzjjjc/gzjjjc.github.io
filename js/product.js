@@ -18,15 +18,47 @@ $(function() {
         name: '生态透水砖',
         background: 'dist/image/product/1/1.png',
         link: '/product/1.html',
+        tableType: 'thickConsume',
+        detail: [{
+            spec: '100x100',
+            thick: '50/60',
+            consume: '100/m<sup>2</sup>'
+        }, {
+            spec: '115x115',
+            thick: '50/60',
+            consume: '75.6/m<sup>2</sup>'
+        }, {
+            spec: '150x150',
+            thick: '50/60',
+            consume: '44/m<sup>2</sup>'
+        }, {
+            spec: '200x200',
+            thick: '50/60',
+            consume: '25/m<sup>2</sup>'
+        }]
+    },{
+        id: 1,
+        type: 1,
+        name: '环保透水砖',
+        background: 'dist/image/product/1/2.png',
+        link: '/product/1.html',
+        tableType: 'thickConsume',
         detail: [{
             spec: '200x100',
-            thick: '60'
+            thick: '60',
+            consume: '50/m<sup>2</sup>'
         }, {
             spec: '230x115',
-            thick: '60'
+            thick: '60',
+            consume: '37.8/m<sup>2</sup>'
         }, {
-            spec: '300x100',
-            thick: '60'
+            spec: '235x125',
+            thick: '60',
+            consume: '32/m<sup>2</sup>'
+        }, {
+            spec: '300x150',
+            thick: '60',
+            consume: '22.2/m<sup>2</sup>'
         }]
     }, {
         id: 2,
@@ -34,15 +66,71 @@ $(function() {
         name: '环保彩砖',
         background: 'dist/image/product/2/1.png',
         link: '/product/2.html',
+        tableType: 'thickConsume',
         detail: [{
-            spec: '230x115',
-            thick: '45'
+            spec: '200x100',
+            thick: '50/60',
+            consume: '50/m<sup>2</sup>'
         }, {
             spec: '230x115',
-            thick: '50'
+            thick: '40/50/60',
+            consume: '37.8/m<sup>2</sup>'
+        }, {
+            spec: '250x125',
+            thick: '50/60',
+            consume: '32/m<sup>2</sup>'
+        }, {
+            spec: '300x150',
+            thick: '50/60',
+            consume: '22.2/m<sup>2</sup>'
+        }]
+    }, {
+        id: 5,
+        type: 1,
+        name: '环保彩砖',
+        background: 'dist/image/product/5/1.png',
+        link: '/product/5.html',
+        tableType: 'thickConsume',
+        detail: [{
+            spec: '100x100',
+            thick: '50/60',
+            consume: '100/m<sup>2</sup>'
+        }, {
+            spec: '115x115',
+            thick: '50/60',
+            consume: '75.6/m<sup>2</sup>'
+        }, {
+            spec: '200x200',
+            thick: '50/60',
+            consume: '25/m<sup>2</sup>'
+        }, {
+            spec: '300x300',
+            thick: '50/60',
+            consume: '11/m<sup>2</sup>'
+        }]
+    }, {
+        id: 6,
+        type: 1,
+        name: '环保彩砖',
+        background: 'dist/image/product/6/1.png',
+        link: '/product/6.html',
+        tableType: 'thickConsume',
+        detail: [{
+            spec: '150x150',
+            thick: '50/60',
+            consume: '44/m<sup>2</sup>'
+        },{
+            spec: '200x100',
+            thick: '50/60',
+            consume: '50/m<sup>2</sup>'
         }, {
             spec: '230x115',
-            thick: '60'
+            thick: '40/50/60',
+            consume: '37.8/m<sup>2</sup>'
+        }, {
+            spec: '250x125',
+            thick: '50/60',
+            consume: '32/m<sup>2</sup>'
         }]
     }, {
         id: 3,
@@ -50,15 +138,47 @@ $(function() {
         name: '分层砖',
         background: 'dist/image/product/3/1.png',
         link: '/product/3.html',
+        tableType: 'thickConsume',
+        detail: [{
+            spec: '100x100',
+            thick: '50/60',
+            consume: '100/m<sup>2</sup>'
+        }, {
+            spec: '115x115',
+            thick: '50/60',
+            consume: '75.6/m<sup>2</sup>'
+        }, {
+            spec: '150x150',
+            thick: '50/60',
+            consume: '44/m<sup>2</sup>'
+        }, {
+            spec: '200x200',
+            thick: '50/60',
+            consume: '25/m<sup>2</sup>'
+        }]
+    }, {
+        id: 3,
+        type: 1,
+        name: '分层砖',
+        background: 'dist/image/product/3/2.png',
+        link: '/product/3.html',
+        tableType: 'thickConsume',
         detail: [{
             spec: '200x100',
-            thick: '45'
+            thick: '50/60',
+            consume: '50/m<sup>2</sup>'
         }, {
             spec: '230x115',
-            thick: '50'
+            thick: '45/50/60',
+            consume: '37.8/m<sup>2</sup>'
         }, {
-            spec: '300x100',
-            thick: '60'
+            spec: '250x125',
+            thick: '50/60',
+            consume: '32/m<sup>2</sup>'
+        }, {
+            spec: '300x150',
+            thick: '50/60',
+            consume: '22.2/m<sup>2</sup>'
         }]
     }, {
         id: 4,
@@ -74,55 +194,20 @@ $(function() {
             thick: '60'
         }]
     }, {
-        id: 5,
-        type: 1,
-        name: '环保彩砖',
-        background: 'dist/image/product/5/1.png',
-        link: '/product/5.html',
-        detail: [{
-            spec: '150x150',
-            thick: '50/60'
-        }, {
-            spec: '200x200',
-            thick: '50/60'
-        }, {
-            spec: '300x300',
-            thick: '50/60'
-        }, {
-            spec: '400x400',
-            thick: '50/60'
-        }]
-    }, {
-        id: 6,
-        type: 1,
-        name: '环保彩砖',
-        background: 'dist/image/product/6/1.png',
-        link: '/product/6.html',
-        detail: [{
-            spec: '150x150',
-            thick: '50/60'
-        }, {
-            spec: '200x200',
-            thick: '50/60'
-        }, {
-            spec: '300x300',
-            thick: '50/60'
-        }, {
-            spec: '400x400',
-            thick: '50/60'
-        }]
-    }, {
         id: 7,
         type: 1,
         name: '码头砖',
         background: 'dist/image/product/7/1.png',
         link: '/product/7.html',
+        tableType: 'thickConsume',
         detail: [{
             spec: '225x112.5',
-            thick: '80'
+            thick: '10',
+            consume: '39.5/m<sup>2</sup>'
         }, {
             spec: '225x112.5',
-            thick: '10'
+            thick: '80',
+            consume: '39.5/m<sup>2</sup>'
         }]
     }, {
         id: 8,
@@ -146,9 +231,15 @@ $(function() {
         name: '六角护坡砖',
         background: 'dist/image/product/9/1.png',
         link: '/product/9.html',
+        tableType: 'thickConsume',
         detail: [{
+            spec: '300x300',
+            thick: '150',
+            consume: '11/m<sup>2</sup>'
+        }, {
             spec: '400x400',
-            thick: '150'
+            thick: '150',
+            consume: '6.25/m<sup>2</sup>'
         }]
     }, {
         id: 10,
@@ -156,9 +247,15 @@ $(function() {
         name: '六角护坡砖',
         background: 'dist/image/product/10/1.png',
         link: '/product/10.html',
+        tableType: 'thickConsume',
         detail: [{
+            spec: '300x300',
+            thick: '150',
+            consume: '11/m<sup>2</sup>'
+        }, {
             spec: '400x400',
-            thick: '150'
+            thick: '150',
+            consume: '6.25/m<sup>2</sup>'
         }]
     }, {
         id: 11,
@@ -166,9 +263,15 @@ $(function() {
         name: '八字植草砖',
         background: 'dist/image/product/11/1.png',
         link: '/product/11.html',
+        tableType: 'thickConsume',
         detail: [{
-            spec: '400x400',
-            thick: '80'
+            spec: '400x200',
+            thick: '75',
+            consume: '12.5/m<sup>2</sup>'
+        }, {
+            spec: '400x200',
+            thick: '100',
+            consume: '12.5/m<sup>2</sup>'
         }]
     }, {
         id: 12,
@@ -176,9 +279,27 @@ $(function() {
         name: '双八字植草砖',
         background: 'dist/image/product/12/1.png',
         link: '/product/12.html',
+        tableType: 'thickConsume',
         detail: [{
             spec: '400x400',
-            thick: '80'
+            thick: '80',
+            consume: '6.25/m<sup>2</sup>'
+        }, {
+            spec: '400x400',
+            thick: '100',
+            consume: '6.25/m<sup>2</sup>'
+        }]
+    }, {
+        id: 49,
+        type: 1,
+        name: '网络植草砖',
+        background: 'dist/image/product/49/1.png',
+        link: '/product/49.html',
+        tableType: 'thickConsume',
+        detail: [{
+            spec: '600x300',
+            thick: '100',
+            consume: '5.5/m<sup>2</sup>'
         }]
     }, {
         id: 13,
@@ -186,9 +307,11 @@ $(function() {
         name: '井形植草砖',
         background: 'dist/image/product/13/1.png',
         link: '/product/13.html',
+        tableType: 'thickPrice',
         detail: [{
             spec: '250x190',
-            thick: '75'
+            thick: '75',
+            price: '21/m<sup>2</sup>'
         }]
     }, {
         id: 14,
@@ -196,36 +319,66 @@ $(function() {
         name: '背心植草砖',
         background: 'dist/image/product/14/1.png',
         link: '/product/14.html',
+        tableType: 'thickPrice',
         detail: [{
             spec: '300x300',
-            thick: '60'
+            thick: '60',
+            price: '11/m<sup>2</sup>'
         }, {
             spec: '300x300',
-            thick: '80'
+            thick: '80',
+            price: '11/m<sup>2</sup>'
         }, {
             spec: '300x300',
-            thick: '100'
+            thick: '100',
+            price: '11/m<sup>2</sup>'
         }]
     }];
     var productTemplate = $($('#product-template').clone().html());
+    var productTemplateConsume = $($('#product-template-consume').clone().html());
+    var productTemplatePrice = $($('#product-template-price').clone().html());
     var productHTMLS = '';
 
     // type 1彩砖
     var product_caizhuan_HTMLS = '';
     $.each(product_caizhuan, function(key, data) {
-        productTemplate.find('.product-title').html(data.name);
-        productTemplate.find('.product-image').attr('data-original', data.background);
-        var details = '';
-        $.each(data.detail, function(key, specData) {
-            details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
-        });
-        var leftTr = 4 - data.detail.length;
-        if (leftTr > 0) {
-            details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
+        var templateObj = productTemplate;
+        if (data.tableType === 'thickPrice') {
+            templateObj = productTemplatePrice;
+        } else if (data.tableType === 'thickConsume') {
+            templateObj = productTemplateConsume;
         }
-        productTemplate.find('.product-spec tbody').html(details);
-        productTemplate.find('a').attr('href', data.link);
-        product_caizhuan_HTMLS += productTemplate.prop('outerHTML');
+        templateObj.find('.product-title').html(data.name);
+        templateObj.find('.product-image').attr('data-original', data.background);
+        var details = '';
+        if (data.tableType === 'thickPrice') {
+            $.each(data.detail, function(key, specData) {
+                details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '<td>' + (specData.price === undefined ? '' : specData.price) + '</td>' + '</tr>';
+            });
+            var leftTr = 4 - data.detail.length;
+            if (leftTr > 0) {
+                details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="3">可定制</td></tr>';
+            }
+        } else if (data.tableType === 'thickConsume') {
+            $.each(data.detail, function(key, specData) {
+                details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '<td>' + (specData.consume === undefined ? '' : specData.consume) + '</td>' + '</tr>';
+            });
+            var leftTr = 4 - data.detail.length;
+            if (leftTr > 0) {
+                details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="3">可定制</td></tr>';
+            }
+        } else {
+            $.each(data.detail, function(key, specData) {
+                details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
+            });
+            var leftTr = 4 - data.detail.length;
+            if (leftTr > 0) {
+                details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
+            }
+        }
+        templateObj.find('.product-spec tbody').html(details);
+        templateObj.find('a').attr('href', data.link);
+        product_caizhuan_HTMLS += templateObj.prop('outerHTML');
     });
     $('#caizhuan').html(product_caizhuan_HTMLS);
     productHTMLS += product_caizhuan_HTMLS;
