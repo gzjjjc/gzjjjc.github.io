@@ -85,6 +85,30 @@ $(function() {
             consume: '22.2/m<sup>2</sup>'
         }]
     }, {
+        id: 2,
+        type: 1,
+        name: '环保彩砖',
+        background: 'dist/image/product/2/2.jpg',
+        link: '/product/2.html',
+        tableType: 'thickConsume',
+        detail: [{
+            spec: '200x100',
+            thick: '50/60',
+            consume: '50/m<sup>2</sup>'
+        }, {
+            spec: '230x115',
+            thick: '40/50/60',
+            consume: '37.8/m<sup>2</sup>'
+        }, {
+            spec: '250x125',
+            thick: '50/60',
+            consume: '32/m<sup>2</sup>'
+        }, {
+            spec: '300x150',
+            thick: '50/60',
+            consume: '22.2/m<sup>2</sup>'
+        }]
+    }, {
         id: 5,
         type: 1,
         name: '环保彩砖',
@@ -194,10 +218,39 @@ $(function() {
             thick: '60'
         }]
     }, {
+        id: 4,
+        type: 1,
+        name: '导盲砖',
+        background: 'dist/image/product/4/2.jpg',
+        link: '/product/4.html',
+        detail: [{
+            spec: '250x250',
+            thick: '50'
+        }, {
+            spec: '300x300',
+            thick: '60'
+        }]
+    }, {
         id: 7,
         type: 1,
         name: '码头砖',
         background: 'dist/image/product/7/1.png',
+        link: '/product/7.html',
+        tableType: 'thickConsume',
+        detail: [{
+            spec: '225x112.5',
+            thick: '10',
+            consume: '39.5/m<sup>2</sup>'
+        }, {
+            spec: '225x112.5',
+            thick: '80',
+            consume: '39.5/m<sup>2</sup>'
+        }]
+    }, {
+        id: 7,
+        type: 1,
+        name: '码头砖',
+        background: 'dist/image/product/7/2.jpg',
         link: '/product/7.html',
         tableType: 'thickConsume',
         detail: [{
@@ -230,6 +283,22 @@ $(function() {
         type: 1,
         name: '六角护坡砖',
         background: 'dist/image/product/9/1.png',
+        link: '/product/9.html',
+        tableType: 'thickConsume',
+        detail: [{
+            spec: '300x300',
+            thick: '150',
+            consume: '11/m<sup>2</sup>'
+        }, {
+            spec: '400x400',
+            thick: '150',
+            consume: '6.25/m<sup>2</sup>'
+        }]
+    }, {
+        id: 9,
+        type: 1,
+        name: '护坡砖',
+        background: 'dist/image/product/9/2.jpg',
         link: '/product/9.html',
         tableType: 'thickConsume',
         detail: [{
@@ -306,6 +375,18 @@ $(function() {
         type: 1,
         name: '井形植草砖',
         background: 'dist/image/product/13/1.png',
+        link: '/product/13.html',
+        tableType: 'thickPrice',
+        detail: [{
+            spec: '250x190',
+            thick: '75',
+            price: '21/m<sup>2</sup>'
+        }]
+    }, {
+        id: 13,
+        type: 1,
+        name: '井形植草砖',
+        background: 'dist/image/product/13/2.jpg',
         link: '/product/13.html',
         tableType: 'thickPrice',
         detail: [{
@@ -441,8 +522,72 @@ $(function() {
     var product_shajinggai = [{
         id: 16,
         type: 3,
-        name: '圆形雨井',
+        name: '沙井盖',
         background: 'dist/image/product/16/1.png',
+        link: '/product/16.html',
+        detail: [{
+            spec: '600',
+            thick: ''
+        }, {
+            spec: '700',
+            thick: ''
+        }, {
+            spec: '800',
+            thick: ''
+        }]
+    }, {
+        id: 16,
+        type: 3,
+        name: '沙井盖',
+        background: 'dist/image/product/16/2.jpg',
+        link: '/product/16.html',
+        detail: [{
+            spec: '600',
+            thick: ''
+        }, {
+            spec: '700',
+            thick: ''
+        }, {
+            spec: '800',
+            thick: ''
+        }]
+    }, {
+        id: 16,
+        type: 3,
+        name: '圆形井盖',
+        background: 'dist/image/product/50/1.png',
+        link: '/product/16.html',
+        detail: [{
+            spec: '600',
+            thick: ''
+        }, {
+            spec: '700',
+            thick: ''
+        }, {
+            spec: '800',
+            thick: ''
+        }]
+    }, {
+        id: 16,
+        type: 3,
+        name: '圆形井盖',
+        background: 'dist/image/product/50/2.jpg',
+        link: '/product/16.html',
+        detail: [{
+            spec: '600',
+            thick: ''
+        }, {
+            spec: '700',
+            thick: ''
+        }, {
+            spec: '800',
+            thick: ''
+        }]
+    }, {
+        id: 16,
+        type: 3,
+        name: '圆形井盖',
+        background: 'dist/image/product/50/3.png',
         link: '/product/16.html',
         detail: [{
             spec: '600',
@@ -487,6 +632,38 @@ $(function() {
             thick: ''
         }]
     }, {
+        id: 35,
+        type: 3,
+        name: '方形雨井',
+        background: 'dist/image/product/35/2.png',
+        link: '/product/16.html',
+        detail: [{
+            spec: '450x650',
+            thick: ''
+        }, {
+            spec: '400x600',
+            thick: ''
+        }, {
+            spec: '400x750',
+            thick: ''
+        }]
+    }, {
+        id: 35,
+        type: 3,
+        name: '方形雨井',
+        background: 'dist/image/product/35/3.jpg',
+        link: '/product/16.html',
+        detail: [{
+            spec: '450x650',
+            thick: ''
+        }, {
+            spec: '400x600',
+            thick: ''
+        }, {
+            spec: '400x750',
+            thick: ''
+        }]
+    }, {
         id: 36,
         type: 3,
         name: '树脂方形井',
@@ -519,6 +696,22 @@ $(function() {
             thick: ''
         }]
     }, {
+        id: 37,
+        type: 3,
+        name: '平式入水井',
+        background: 'dist/image/product/37/2.png',
+        link: '/product/16.html',
+        detail: [{
+            spec: '300x500',
+            thick: ''
+        }, {
+            spec: '400x500',
+            thick: ''
+        }, {
+            spec: '400x400',
+            thick: ''
+        }]
+    }, {
         id: 38,
         type: 3,
         name: '井梯',
@@ -532,6 +725,38 @@ $(function() {
             thick: ''
         }, {
             spec: '400x400',
+            thick: ''
+        }]
+    }, {
+        id: 51,
+        type: 3,
+        name: '污水井盖',
+        background: 'dist/image/product/51/1.jpg',
+        link: '/product/16.html',
+        detail: [{
+            spec: '450x650',
+            thick: ''
+        }, {
+            spec: '400x600',
+            thick: ''
+        }, {
+            spec: '400x750',
+            thick: ''
+        }]
+    }, {
+        id: 52,
+        type: 3,
+        name: '雨水井',
+        background: 'dist/image/product/52/1.jpg',
+        link: '/product/16.html',
+        detail: [{
+            spec: '450x650',
+            thick: ''
+        }, {
+            spec: '400x600',
+            thick: ''
+        }, {
+            spec: '400x750',
             thick: ''
         }]
     }];
@@ -816,6 +1041,38 @@ $(function() {
             spec: '600x400',
             thick: '700'
         }]
+    },{
+        id: 27,
+        type: 8,
+        name: '花岗岩石材',
+        background: 'dist/image/product/27/2.png',
+        link: '/product/27.html',
+        detail: [{
+            spec: '500x300',
+            thick: '700'
+        }, {
+            spec: '500x400',
+            thick: '700'
+        }, {
+            spec: '600x400',
+            thick: '700'
+        }]
+    },{
+        id: 27,
+        type: 8,
+        name: '花岗岩石材',
+        background: 'dist/image/product/27/3.png',
+        link: '/product/27.html',
+        detail: [{
+            spec: '500x300',
+            thick: '700'
+        }, {
+            spec: '500x400',
+            thick: '700'
+        }, {
+            spec: '600x400',
+            thick: '700'
+        }]
     }];
     var product_huagangyanshicai_HTMLS = '';
     $.each(product_huagangyanshicai, function(key, data) {
@@ -953,6 +1210,19 @@ $(function() {
             thick: ''
         }]
     }, {
+        id: 44,
+        type: 10,
+        name: '电缆槽',
+        background: 'dist/image/product/44/2.jpg',
+        link: '/product/44.html',
+        detail: [{
+            spec: '1000x1000',
+            thick: ''
+        }, {
+            spec: '1200x1200',
+            thick: ''
+        }]
+    }, {
         id: 45,
         type: 10,
         name: '仿花岗岩平石',
@@ -1000,6 +1270,22 @@ $(function() {
         }, {
             spec: '20000x90',
             thick: '90'
+        }]
+    }, {
+        id: 53,
+        type: 10,
+        name: '水泥制品',
+        background: 'dist/image/product/53/1.png',
+        link: '/product/53.html',
+        detail: [{
+            spec: '100x100',
+            thick: '40'
+        }, {
+            spec: '200x200',
+            thick: '50'
+        }, {
+            spec: '300x300',
+            thick: '60'
         }]
     }];
     var product_shuinizhipin_HTMLS = '';
