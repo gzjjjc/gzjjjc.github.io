@@ -13,6 +13,10 @@
   "strict": false,
   "globals": {
     "jQuery": true,
+    "WOW": true,
+    "BMap": true,
+    "BMAP_ANCHOR_TOP_RIGHT": true,
+    "BMAP_NAVIGATION_CONTROL_SMALL": true,
     "$": true
   }
 }

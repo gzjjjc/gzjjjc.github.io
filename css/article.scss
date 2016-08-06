@@ -11,6 +11,7 @@
     }
     .carousel {
         .inner-item {
+            display: inline-block !important;
             width: 100%;
             height: pxTorem(360px) !important;
             min-height: pxTorem(360px) !important;

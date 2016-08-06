@@ -432,11 +432,12 @@ $(function() {
         templateObj.find('.product-title').html(data.name);
         templateObj.find('.product-image').attr('data-original', data.background);
         var details = '';
+        var leftTr;
         if (data.tableType === 'thickPrice') {
             $.each(data.detail, function(key, specData) {
                 details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '<td>' + (specData.price === undefined ? '' : specData.price) + '</td>' + '</tr>';
             });
-            var leftTr = 4 - data.detail.length;
+            leftTr = 4 - data.detail.length;
             if (leftTr > 0) {
                 details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="3">可定制</td></tr>';
             }
@@ -444,7 +445,7 @@ $(function() {
             $.each(data.detail, function(key, specData) {
                 details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '<td>' + (specData.consume === undefined ? '' : specData.consume) + '</td>' + '</tr>';
             });
-            var leftTr = 4 - data.detail.length;
+            leftTr = 4 - data.detail.length;
             if (leftTr > 0) {
                 details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="3">可定制</td></tr>';
             }
@@ -452,7 +453,7 @@ $(function() {
             $.each(data.detail, function(key, specData) {
                 details += '<tr>' + '<td>' + specData.spec + '</td>' + '<td>' + specData.thick + '</td>' + '</tr>';
             });
-            var leftTr = 4 - data.detail.length;
+            leftTr = 4 - data.detail.length;
             if (leftTr > 0) {
                 details += '<tr>' + '<td rowspan="' + leftTr + '" colspan="2">可定制</td></tr>';
             }

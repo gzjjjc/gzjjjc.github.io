@@ -4,12 +4,42 @@
 @import "bs/mixins/breakpoints";
 @import "header";
 @import "menu";
-
 #doc-body {
     padding: 32px 0 16px;
     min-height: 600px;
 }
-@import "article";
 
+@import "article";
 @import "footer";
 @import "contact";
+.project {
+    display: block;
+    height: 269px;
+    min-height: 269px;
+    cursor: pointer;
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    text-decoration: none !important;
+    .project-image-trigger {
+        display: block !important;
+        width: 100%;
+        height: 213px;
+        min-height: 213px;
+        max-height: 213px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #ffffff;
+    }
+    .project-detail {
+        text-align: center;
+    }
+    .project-detail-type {
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+    &:hover {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    }
+}

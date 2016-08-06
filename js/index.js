@@ -48,7 +48,14 @@ $(function() {
 
     $(window).on('activate.bs.scrollspy', function(e, target) {
         if (target.relatedTarget === '#doc-about') {
-            loadJScript();
+            if (window.mapScriptIsAdded) {
+                return;
+            }
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://api.map.baidu.com/api?v=2.0&ak=kDn0ouEREmENRD9oTrmV4W27AjadqnWl&s=1&callback=init";
+            document.body.appendChild(script);
+            window.mapScriptIsAdded = true;
         }
 
     });
@@ -67,24 +74,14 @@ $(function() {
     wow.init();
 });
 
-function loadJScript() {
-    if (window.mapScriptIsAdded) {
-        return;
-    }
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://api.map.baidu.com/api?v=2.0&ak=kDn0ouEREmENRD9oTrmV4W27AjadqnWl&s=1&callback=init";
-    document.body.appendChild(script);
-    window.mapScriptIsAdded = true;
-}
-
+/* exported init */
 function init() {
     var map = new BMap.Map("doc-about-map", { minZoom: 12, maxZoom: 19 }); // 创建Map实例
     var point = new BMap.Point(113.398315, 23.136928); // 创建点坐标
     map.setCurrentCity("广州"); // 设置地图显示的城市 此项是必须设置的
     map.centerAndZoom(point, 17);
     map.addControl(new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL })); //添加放大缩小控件
-    var opts = { offset: new BMap.Size(48, 16) }
+    var opts = { offset: new BMap.Size(48, 16) };
     map.addControl(new BMap.MapTypeControl(opts)); //添加地图类型控件
     // map.enableScrollWheelZoom(); //启用滚轮放大缩小
     map.disableDragging();
@@ -92,7 +89,7 @@ function init() {
     map.addOverlay(maker);
     // 将标注添加到地图中
     //创建信息窗口
-    var opts = {
+    var infoOptions = {
         width: 160,
         // 信息窗口宽度
         height: 32,
@@ -101,7 +98,7 @@ function init() {
         // 信息窗口标题
         enableAutoPan: true //自动平移
     };
-    var infoWindow = new BMap.InfoWindow('联系电话：13503032349', opts);
+    var infoWindow = new BMap.InfoWindow('联系电话：13503032349', infoOptions);
     maker.addEventListener('click', function() {
         map.openInfoWindow(infoWindow, point);
     });

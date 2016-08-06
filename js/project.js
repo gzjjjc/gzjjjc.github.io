@@ -21,7 +21,12 @@ $(function() {
 
 
     $('#doc-menu-detail a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-        $(".carousel .inner-item").lazyload();
+        $(".carousel .inner-item").lazyload({
+            effect: 'fadeIn'
+        });
+        $('.lazyload-background').lazyload({
+            effect: 'fadeIn'
+        });
     });
 
     // 计算选中的tab
@@ -33,4 +38,9 @@ $(function() {
         id = parseInt(id) - 1;
         $('#doc-menu-detail li:eq(' + id + ') a').tab('show');
     }
+    
+    var wow = new WOW({
+        boxClass: 'animCss',
+    });
+    wow.init();
 });
