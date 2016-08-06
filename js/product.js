@@ -1103,6 +1103,32 @@ $(function() {
             spec: '600x400',
             thick: '700'
         }]
+    }, {
+        id: 54,
+        type: 10,
+        name: '大理石制片',
+        background: 'dist/image/product/54/1.jpg',
+        link: '/product/54.html',
+        detail: [{
+            spec: '600x600',
+            thick: '20'
+        },{
+            spec: '600x800',
+            thick: '18'
+        }]
+    }, {
+        id: 54,
+        type: 10,
+        name: '大理石制片',
+        background: 'dist/image/product/54/2.jpg',
+        link: '/product/54.html',
+        detail: [{
+            spec: '600x600',
+            thick: '20'
+        },{
+            spec: '600x800',
+            thick: '18'
+        }]
     }];
     var product_huagangyanshicai_HTMLS = '';
     $.each(product_huagangyanshicai, function(key, data) {
@@ -1300,32 +1326,6 @@ $(function() {
         }, {
             spec: '420x50',
             thick: '60'
-        }]
-    }, {
-        id: 54,
-        type: 10,
-        name: '大理石制片',
-        background: 'dist/image/product/54/1.jpg',
-        link: '/product/54.html',
-        detail: [{
-            spec: '600x600',
-            thick: '20'
-        },{
-            spec: '600x800',
-            thick: '18'
-        }]
-    }, {
-        id: 54,
-        type: 10,
-        name: '大理石制片',
-        background: 'dist/image/product/54/2.jpg',
-        link: '/product/54.html',
-        detail: [{
-            spec: '600x600',
-            thick: '20'
-        },{
-            spec: '600x800',
-            thick: '18'
         }]
     }, {
         id: 55,
