@@ -812,6 +812,35 @@ $(function() {
             spec: '500x600',
             thick: '300'
         }]
+    }, {
+        id: 31,
+        type: 4,
+        name: '防撞石',
+        background: 'dist/image/product/31/2.jpg',
+        link: '/product/31.html',
+        detail: [{
+            spec: '500x600',
+            thick: '200'
+        }, {
+            spec: '600x600',
+            thick: '200'
+        }, {
+            spec: '500x600',
+            thick: '300'
+        }]
+    }, {
+        id: 42,
+        type: 10,
+        name: '车止石',
+        background: 'dist/image/product/42/1.png',
+        link: '/product/42.html',
+        detail: [{
+            spec: '1000x1000',
+            thick: ''
+        }, {
+            spec: '1200x1200',
+            thick: ''
+        }]
     }];
     var product_fangzhuanggelidun_HTMLS = '';
     $.each(product_fangzhuanggelidun, function(key, data) {
@@ -1171,19 +1200,6 @@ $(function() {
             thick: ''
         }]
     }, {
-        id: 42,
-        type: 10,
-        name: '车止石',
-        background: 'dist/image/product/42/1.png',
-        link: '/product/42.html',
-        detail: [{
-            spec: '1000x1000',
-            thick: ''
-        }, {
-            spec: '1200x1200',
-            thick: ''
-        }]
-    }, {
         id: 43,
         type: 10,
         name: '窗花',
@@ -1274,18 +1290,67 @@ $(function() {
     }, {
         id: 53,
         type: 10,
-        name: '水泥制品',
-        background: 'dist/image/product/53/1.png',
+        name: '电缆支架',
+        background: 'dist/image/product/53/1.jpg',
         link: '/product/53.html',
         detail: [{
-            spec: '100x100',
-            thick: '40'
-        }, {
-            spec: '200x200',
-            thick: '50'
-        }, {
-            spec: '300x300',
+            spec: '540x50',
             thick: '60'
+        }, {
+            spec: '420x50',
+            thick: '60'
+        }]
+    }, {
+        id: 54,
+        type: 10,
+        name: '大理石制片',
+        background: 'dist/image/product/54/1.jpg',
+        link: '/product/54.html',
+        detail: [{
+            spec: '600x600',
+            thick: '20'
+        },{
+            spec: '600x800',
+            thick: '18'
+        }]
+    }, {
+        id: 54,
+        type: 10,
+        name: '大理石制片',
+        background: 'dist/image/product/54/2.jpg',
+        link: '/product/54.html',
+        detail: [{
+            spec: '600x600',
+            thick: '20'
+        },{
+            spec: '600x800',
+            thick: '18'
+        }]
+    }, {
+        id: 55,
+        type: 10,
+        name: '标识',
+        background: 'dist/image/product/55/1.jpg',
+        link: '/product/55.html',
+        detail: [{
+            spec: '500x400',
+            thick: '60'
+        },{
+            spec: '400x300',
+            thick: '50'
+        }]
+    }, {
+        id: 55,
+        type: 10,
+        name: '标识',
+        background: 'dist/image/product/55/2.jpg',
+        link: '/product/55.html',
+        detail: [{
+            spec: '500x400',
+            thick: '60'
+        },{
+            spec: '400x300',
+            thick: '50'
         }]
     }];
     var product_shuinizhipin_HTMLS = '';
