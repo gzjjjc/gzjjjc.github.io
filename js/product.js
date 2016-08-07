@@ -364,7 +364,7 @@ $(function() {
         id: 13,
         type: 1,
         name: '井形植草砖',
-        background: 'dist/image/product/13/2.jpg',
+        background: 'dist/image/product/13/4.jpg',
         link: '/product/13.html',
         tableType: 'thickPrice',
         detail: [{
@@ -873,7 +873,7 @@ $(function() {
         id: 42,
         type: 10,
         name: '车止石',
-        background: 'dist/image/product/42/1.png',
+        background: 'dist/image/product/42/2.png',
         link: '/product/42.html',
         detail: [{
             spec: '160x1000',
