@@ -293,6 +293,22 @@ $(function() {
             consume: '12.5/m<sup>2</sup>'
         }]
     }, {
+        id: 11,
+        type: 1,
+        name: '八字植草砖',
+        background: 'dist/image/product/11/1.jpg',
+        link: '/product/11.html',
+        tableType: 'thickConsume',
+        detail: [{
+            spec: '400x200',
+            thick: '75',
+            consume: '12.5/m<sup>2</sup>'
+        }, {
+            spec: '400x200',
+            thick: '100',
+            consume: '12.5/m<sup>2</sup>'
+        }]
+    }, {
         id: 12,
         type: 1,
         name: '双八字植草砖',
@@ -336,7 +352,31 @@ $(function() {
         id: 13,
         type: 1,
         name: '井形植草砖',
+        background: 'dist/image/product/13/1.jpg',
+        link: '/product/13.html',
+        tableType: 'thickPrice',
+        detail: [{
+            spec: '250x190',
+            thick: '75',
+            price: '21/m<sup>2</sup>'
+        }]
+    }, {
+        id: 13,
+        type: 1,
+        name: '井形植草砖',
         background: 'dist/image/product/13/2.jpg',
+        link: '/product/13.html',
+        tableType: 'thickPrice',
+        detail: [{
+            spec: '250x190',
+            thick: '75',
+            price: '21/m<sup>2</sup>'
+        }]
+    }, {
+        id: 13,
+        type: 1,
+        name: '井形植草砖',
+        background: 'dist/image/product/13/3.jpg',
         link: '/product/13.html',
         tableType: 'thickPrice',
         detail: [{
@@ -349,6 +389,54 @@ $(function() {
         type: 1,
         name: '背心植草砖',
         background: 'dist/image/product/14/1.png',
+        link: '/product/14.html',
+        tableType: 'thickPrice',
+        detail: [{
+            spec: '300x300',
+            thick: '60',
+            price: '11/m<sup>2</sup>'
+        }, {
+            spec: '300x300',
+            thick: '75',
+            price: '11/m<sup>2</sup>'
+        }]
+    }, {
+        id: 14,
+        type: 1,
+        name: '背心植草砖',
+        background: 'dist/image/product/14/1.jpg',
+        link: '/product/14.html',
+        tableType: 'thickPrice',
+        detail: [{
+            spec: '300x300',
+            thick: '60',
+            price: '11/m<sup>2</sup>'
+        }, {
+            spec: '300x300',
+            thick: '75',
+            price: '11/m<sup>2</sup>'
+        }]
+    }, {
+        id: 14,
+        type: 1,
+        name: '背心植草砖',
+        background: 'dist/image/product/14/2.jpg',
+        link: '/product/14.html',
+        tableType: 'thickPrice',
+        detail: [{
+            spec: '300x300',
+            thick: '60',
+            price: '11/m<sup>2</sup>'
+        }, {
+            spec: '300x300',
+            thick: '75',
+            price: '11/m<sup>2</sup>'
+        }]
+    }, {
+        id: 14,
+        type: 1,
+        name: '背心植草砖',
+        background: 'dist/image/product/14/3.jpg',
         link: '/product/14.html',
         tableType: 'thickPrice',
         detail: [{
@@ -829,6 +917,38 @@ $(function() {
             thick: '120'
         }, {
             spec: '1000x300',
+            thick: '150'
+        }, {
+            spec: '500x300',
+            thick: '120'
+        }]
+    },{
+        id: 18,
+        type: 5,
+        name: '路侧石',
+        background: 'dist/image/product/18/1.jpg',
+        link: '/product/18.html',
+        detail: [{
+            spec: '1000x300',
+            thick: '150'
+        }, {
+            spec: '1000x300',
+            thick: '120'
+        }, {
+            spec: '500x300',
+            thick: '150'
+        }, {
+            spec: '500x300',
+            thick: '120'
+        }]
+    },{
+        id: 18,
+        type: 5,
+        name: '路侧石',
+        background: 'dist/image/product/18/4.jpg',
+        link: '/product/18.html',
+        detail: [{
+            spec: '500x300',
             thick: '150'
         }, {
             spec: '500x300',
