@@ -171,6 +171,19 @@ $(function() {
             thick: '50/80'
         }]
     }, {
+        id: 70,
+        type: 1,
+        name: '止步砖',
+        background: 'dist/image/product/4/2.png',
+        link: '/product/70.html',
+        detail: [{
+            spec: '250x250',
+            thick: '50'
+        }, {
+            spec: '300x300',
+            thick: '50/80'
+        }]
+    }, {
         id: 7,
         type: 1,
         name: '码头砖',
@@ -407,14 +420,14 @@ $(function() {
         background: 'dist/image/product/30/1.jpg',
         link: '/product/30.html',
         detail: [{
-            spec: '500x320',
-            thick: '20'
+            spec: '500x200',
+            thick: '20/30'
         }, {
-            spec: '500x400',
-            thick: '30'
+            spec: '500x250',
+            thick: '20/30'
         }, {
-            spec: '500x500',
-            thick: '30'
+            spec: '500x300',
+            thick: '20/30'
         }]
     }, {
         id: 58,
@@ -1067,14 +1080,8 @@ $(function() {
         background: 'dist/image/product/26/1.png',
         link: '/product/26.html',
         detail: [{
-            spec: '300x300',
-            thick: '35'
-        }, {
-            spec: '300x300',
-            thick: '38'
-        }, {
-            spec: '300x300',
-            thick: '50'
+            spec: '400x400',
+            thick: '60'
         }]
     }];
     var product_gereban_HTMLS = '';
